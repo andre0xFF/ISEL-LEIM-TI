@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Social_Network SYSTEM "social_network.dtd">
+
+<Social_Network>
+  <users>
+    <!-- Unique: id, username -->
+    <!-- Optional: birthday, photo -->
+    <!-- Encrypted: password -->
+    <user id="0" username="lsvinicius" password="152g!3RD:A" photo="http://placehold.it/150x150">
+      <name>Lucas Simão Vinícius</name>
+      <birthday></birthday>
+    </user>
+    <user id="1" username="evfernando" password="!3RD:A152g" photo="http://placehold.it/150x150">
+      <name>Eneida Viriato Fernando</name>
+      <birthday></birthday>
+    </user>
+    <user id="2" username="ccharoldo" password="3RD:152g!A" photo="http://placehold.it/150x150">
+      <name>Carlinhos Custódio Haroldo</name>
+      <birthday></birthday>
+    </user>
+    <user id="3" username="ehezequiel" password="!3R152gD:A" photo="http://placehold.it/150x150">
+      <name>Elder Helder Ezequiel</name>
+      <birthday></birthday>
+    </user>
+    <user id="4" username="adduda" password="g!3R152D:A" photo="http://placehold.it/150x150">
+      <name>Artur Duarte Duda</name>
+      <birthday></birthday>
+    </user>
+    <user id="5" username="peanacleto" password="RD152g!3:A" photo="http://placehold.it/150x150">
+      <name>Palmira Eutímio Anacleto</name>
+      <birthday></birthday>
+    </user>
+  </users>
+
+  <videos>
+    <!-- Unique: id, username -->
+    <!-- Optional: description, tag -->
+    <video id="0" quality="720p" length="112" cover="http://placehold.it/150x150" path="https://youtu.be/0a_00nJ_Y88">
+      <title>2014 | SpaceX Year in Review</title>
+      <description>Relive SpaceX’s 2014 highlights: launching rockets, landing stages, and unveiling our next generation crewed spacecraft.</description>
+      <tags>
+        <!-- TODO: Element with 1 Attribute? -->
+        <tag>spacex</tag>
+        <tag>rockets</tag>
+      </tags>
+    </video>
+    <video id="1" quality="720p" length="112" cover="http://placehold.it/150x150" path="https://youtu.be/0UjWqQPWmsY">
+      <title>F9R First Flight Test | 250m</title>
+      <description>Video of Falcon 9 Reusable (F9R) taking its first test flight at our rocket development facility.</description>
+      <tags>
+        <!-- TODO: Element with 1 Attribute? -->
+        <tag>spacex</tag>
+        <tag>rockets</tag>
+        <tag>f9r</tag>
+      </tags>
+    </video>
+    <video id="2" quality="720p" length="91" cover="http://placehold.it/150x150" path="https://youtu.be/24i8G5a5d5Q">
+      <title>Mission Overview | SES-8 Launch</title>
+      <description>On December 3, 2013 SpaceX successfully completed its first geostationary transfer mission, with the Falcon 9 rocket delivering the SES-8 satellite to its targeted 295 x 80,000 km orbit.</description>
+      <tags>
+        <!-- TODO: Element with 1 Attribute? -->
+        <tag>spacex</tag>
+        <tag>rockets</tag>
+        <tag>ses8</tag>
+      </tags>
+    </video>
+    <video id="3" quality="720p" length="96" cover="http://placehold.it/150x150" path="https://youtu.be/9ZDkItO-0a4">
+      <title>Grasshopper 744m Test | Single Camera (Hexacopter)</title>
+      <description>On Monday, October 7th, Grasshopper completed its highest leap to date, rising to 744m altitude. The view above is taken from a single camera hexacopter, getting closer to the stage than in any previous flight.</description>
+      <tags>
+        <!-- TODO: Element with 1 Attribute? -->
+        <tag>spacex</tag>
+        <tag>rockets</tag>
+        <tag>grasshopper</tag>
+      </tags>
+    </video>
+    <video id="4" quality="720p" length="72" cover="http://placehold.it/150x150" path="https://youtu.be/2t15vP1PyoA">
+      <title>Grasshopper Divert | Single Cam</title>
+      <description>On August 13th, the Falcon 9 test rig (code name Grasshopper) completed a divert test, flying to a 250m altitude with a 100m lateral maneuver before returning to the center of the pad.</description>
+      <tags>
+        <!-- TODO: Element with 1 Attribute? -->
+        <tag>spacex</tag>
+        <tag>rockets</tag>
+        <tag>grasshopper</tag>
+      </tags>
+    </video>
+    <video id="5" quality="720p" length="150" cover="http://placehold.it/150x150" path="https://youtu.be/CgIghRD4-ao">
+      <title>Falcon 9-Reusable (F9-R) 1st Stage Firing</title>
+      <description>Test firing of the first stage of F9-R--advanced prototype for the world's first reusable rocket.</description>
+      <tags>
+        <!-- TODO: Element with 1 Attribute? -->
+        <tag>spacex</tag>
+        <tag>rockets</tag>
+        <tag>falcon9</tag>
+      </tags>
+    </video>
+    <video id="6" quality="720p" length="59" cover="http://placehold.it/150x150" path="https://youtu.be/LwbUilUa4K4">
+      <title>One Year Ago Today | Dragon's First Trip to Station</title>
+      <tags>
+        <!-- TODO: Element with 1 Attribute? -->
+        <tag>spacex</tag>
+      </tags>
+    </video>
+    <video id="7" quality="720p" length="86" cover="http://placehold.it/150x150" path="https://youtu.be/ujX6CuRELFE">
+      <title>This is SpaceX</title>
+      <description>SpaceX designs, manufactures, and launches the world's most advanced rockets and spacecraft. </description>
+      <tags>
+        <!-- TODO: Element with 1 Attribute? -->
+        <tag>spacex</tag>
+        <tag>rockets</tag>
+      </tags>
+    </video>
+  </videos>
+
+  <playlists>
+    <!-- Unique: id -->
+    <!-- Required Creator -->
+    <playlist id="0" order="random/sorted_by" creator_id="" cover="http://">
+      <!-- Optional: administrator, editor -->
+      <title></title>
+      <description></description>
+      <creation_date></creation_date>
+    </playlist>
+  </playlists>
+
+  <playlists_administrators>
+    <administrator playlist_id="" user_id=""/>
+    <administrator playlist_id="" user_id=""/>
+    <administrator playlist_id="" user_id=""/>
+  </playlists_administrators>
+
+  <playlists_editors>
+    <editor playlist_id="" user_id=""/>
+    <editor playlist_id="" user_id=""/>
+    <editor playlist_id="" user_id=""/>
+  </playlists_editors>
+
+  <playlists_subscribers>
+    <subscriber playlist_id="" user_id=""/>
+    <subscriber playlist_id="" user_id=""/>
+    <subscriber playlist_id="" user_id=""/>
+  </playlists_subscribers>
+
+  <playlists_requests>
+    <request playlist_id="" user_id=""/>
+    <request playlist_id="" user_id=""/>
+    <request playlist_id="" user_id=""/>
+  </playlists_requests>
+
+  <playlists_views>
+    <view user_id="0" playlist_id="0" video_id="" stopped="10"/>
+    <view user_id="0" playlist_id="1" video_id="" stopped="20"/>
+    <view user_id="0" playlist_id="2" video_id="" stopped="30"/>
+    <view user_id="1" playlist_id="0" video_id="" stopped="40"/>
+    <view user_id="1" playlist_id="2" video_id="" stopped="05"/>
+    <view user_id="2" playlist_id="1" video_id="" stopped="15"/>
+    <view user_id="3" playlist_id="1" video_id="" stopped="25"/>
+    <view user_id="4" playlist_id="2" video_id="" stopped="35"/>
+    <view user_id="4" playlist_id="0" video_id="" stopped="45"/>
+    <view user_id="4" playlist_id="1" video_id="" stopped="10"/>
+    <view user_id="5" playlist_id="2" video_id="" stopped="20"/>
+  </playlists_views>
+
+  <comments>
+    <comment id="0">
+      <date>10/10/2016</date>
+      <likes>1</likes>
+      <dislikes>0</dislikes>
+      <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text>
+    </comment>
+    <comment id="1">
+      <date>10/10/2016</date>
+      <likes>3</likes>
+      <dislikes>1</dislikes>
+      <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text>
+    </comment>
+    <comment id="2">
+      <date>11/10/2016</date>
+      <likes>1</likes>
+      <dislikes>6</dislikes>
+      <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text>
+    </comment>
+    <comment id="3">
+      <date>12/10/2016</date>
+      <likes>3</likes>
+      <dislikes>3</dislikes>
+      <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text>
+    </comment>
+    <comment id="4">
+      <date>13/10/2016</date>
+      <likes>0</likes>
+      <dislikes>0</dislikes>
+      <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text>
+    </comment>
+    <comment id="5">
+      <date>14/10/2016</date>
+      <likes>2</likes>
+      <dislikes>1</dislikes>
+      <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text>
+    </comment>
+    <comment id="6">
+      <date>15/10/2016</date>
+      <likes>10</likes>
+      <dislikes>4</dislikes>
+      <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text>
+    </comment>
+    <comment id="7">
+      <date>16/10/2016</date>
+      <likes>10</likes>
+      <dislikes>1</dislikes>
+      <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text>
+    </comment>
+  </comments>
+
+  <videos_comments>
+    <comment id="" video=""/>
+    <comment id="" video=""/>
+    <comment id="" video=""/>
+  </videos_comments>
+
+  <playlists_comments>
+    <comment id="" playlist=""/>
+    <comment id="" playlist=""/>
+    <comment id="" playlist=""/>
+  </playlists_comments>
+
+  <comments_responses>
+    <comment id="" response=""/>
+  </comments_responses>
+
+</Social_Network>
