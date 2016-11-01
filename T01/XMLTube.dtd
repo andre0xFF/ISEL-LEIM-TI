@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT users (user*)>
+<!ELEMENT user (name, birthday?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT birthday (#PCDATA)>
+
+<!ATTLIST user
+        username ID #REQUIRED
+        password CDATA #REQUIRED
+        photo CDATA #REQUIRED
+        >
+
+<!ELEMENT videos (video*)>
+<!ELEMENT video (title, description*, tags)>
+<!ELEMENT tags (tag*)>
+
+<!ATTLIST video
+        id ID #REQUIRED
+        quality (144p | 240p | 360p | 480p | 720p | 1080p | 1440p | 2160p) #REQUIRED
+        length CDATA #REQUIRED
+        cover CDATA #IMPLIED
+        path CDATA #REQUIRED
+        >
+
+<!ELEMENT playlists (playlist*)>
+<!ELEMENT playlist (title, description*, creation_date)>
+
+<!ATTLIST playlist
+        id ID #REQUIRED
+        order (random | sorted) "random"
+        username IDREF #REQUIRED
+        cover CDATA #REQUIRED
+        >
+
+<!ELEMENT playlist_videos (playlist_video*)>
+<!ELEMENT playlist_video EMPTY>
+
+<!ATTLIST playlist_video
+        playlist_id IDREF #REQUIRED
+        video_id IDREF #REQUIRED
+        >
+
+<!ELEMENT playlists_administrators (administrator*)>
+<!ELEMENT administrator EMPTY>
+
+<!ATTLIST administrator
+        playlist_id IDREF #REQUIRED
+        username IDREF #REQUIRED
+        >
+
+<!ELEMENT playlists_editors (editor*)>
+<!ELEMENT editor EMPTY>
+
+<!ATTLIST editor
+        playlist_id IDREF #REQUIRED
+        username IDREF #REQUIRED
+        >
+
+<!ELEMENT playlists_subscribers (subscriber*)>
+<!ELEMENT subscriber EMPTY>
+
+<!ATTLIST subscriber
+        playlist_id IDREF #REQUIRED
+        username IDREF #REQUIRED
+        >
+
+<!ELEMENT playlists_requests (request*)>
+<!ELEMENT request EMPTY>
+
+<!ATTLIST request
+        playlist_id IDREF #REQUIRED
+        username IDREF #REQUIRED
+        >
+
+<!ELEMENT playlists_views (view*)>
+<!ELEMENT view EMPTY>
+
+<!ATTLIST view
+        username IDREF #REQUIRED
+        playlist_id IDREF #REQUIRED
+        video_id IDREF #REQUIRED
+        stopped CDATA #IMPLIED
+        >
+
+<!ELEMENT comments (comment*)>
+<!ELEMENT comment (date, time, likes, dislikes, content)>
+
+<!ATTLIST comment
+        id ID #REQUIRED
+        service (playlists | videos | response) #REQUIRED
+        >

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE XMLTube SYSTEM "XMLTube.dtd">
+
+<!-- TODO: namespaces, convert time fromminutes to time format -->
+
+<XMLTube>
+  <users>
+    <!-- Unique: id, username -->
+    <!-- Optional: birthday, photo -->
+    <!-- Encrypted: password -->
+    <user username="lsvinicius" password="152g!3RD:A" photo="http://placehold.it/150x150">
+      <name>Lucas Simão Vinícius</name>
+      <birthday>10/10/1977</birthday>
+    </user>
+    <user username="evfernando" password="!3RD:A152g" photo="http://placehold.it/150x150">
+      <name>Eneida Viriato Fernando</name>
+      <birthday>10/03/1975</birthday>
+    </user>
+    <user username="ccharoldo" password="3RD:152g!A" photo="http://placehold.it/150x150">
+      <name>Carlinhos Custódio Haroldo</name>
+      <birthday>10/03/1999</birthday>
+    </user>
+    <user username="ehezequiel" password="!3R152gD:A" photo="http://placehold.it/150x150">
+      <name>Elder Helder Ezequiel</name>
+      <birthday>10/01/1985</birthday>
+    </user>
+    <user username="adduda" password="g!3R152D:A" photo="http://placehold.it/150x150">
+      <name>Artur Duarte Duda</name>
+      <birthday>10/11/1992</birthday>
+    </user>
+    <user username="peanacleto" password="RD152g!3:A" photo="http://placehold.it/150x150">
+      <name>Palmira Eutímio Anacleto</name>
+      <birthday>10/12/1980</birthday>
+    </user>
+  </users>
+
+  <videos>
+    <!-- Unique: id, username -->
+    <!-- Optional: description, tag -->
+    <video id="v_0" quality="720p" length="00:02:01" cover="http://placehold.it/150x150" path="https://youtu.be/0a_00nJ_Y88">
+      <title>2014 | SpaceX Year in Review</title>
+      <description>Relive SpaceX’s 2014 highlights: launching rockets, landing stages, and unveiling our next generation crewed spacecraft.</description>
+      <tags>
+        <!-- TODO: Element with 1 Attribute? -->
+        <tag>spacex</tag>
+        <tag>rockets</tag>
+      </tags>
+    </video>
+    <video id="v_1" quality="720p" length="00:01:52" cover="http://placehold.it/150x150" path="https://youtu.be/0UjWqQPWmsY">
+      <title>F9R First Flight Test | 250m</title>
+      <description>Video of Falcon 9 Reusable (F9R) taking its first test flight at our rocket development facility.</description>
+      <tags>
+        <!-- TODO: Element with 1 Attribute? -->
+        <tag>spacex</tag>
+        <tag>rockets</tag>
+        <tag>f9r</tag>
+      </tags>
+    </video>
+    <video id="v_2" quality="720p" length="00:01:31" cover="http://placehold.it/150x150" path="https://youtu.be/24i8G5a5d5Q">
+      <title>Mission Overview | SES-8 Launch</title>
+      <description>On December 3, 2013 SpaceX successfully completed its first geostationary transfer mission, with the Falcon 9 rocket delivering the SES-8 satellite to its targeted 295 x 80,000 km orbit.</description>
+      <tags>
+        <!-- TODO: Element with 1 Attribute? -->
+        <tag>spacex</tag>
+        <tag>rockets</tag>
+        <tag>ses8</tag>
+      </tags>
+    </video>
+    <video id="v_3" quality="720p" length="00:01:36" cover="http://placehold.it/150x150" path="https://youtu.be/9ZDkItO-0a4">
+      <title>Grasshopper 744m Test | Single Camera (Hexacopter)</title>
+      <description>On Monday, October 7th, Grasshopper completed its highest leap to date, rising to 744m altitude. The view above is taken from a single camera hexacopter, getting closer to the stage than in any previous flight.</description>
+      <tags>
+        <!-- TODO: Element with 1 Attribute? -->
+        <tag>spacex</tag>
+        <tag>rockets</tag>
+        <tag>grasshopper</tag>
+      </tags>
+    </video>
+    <video id="v_4" quality="720p" length="00:01:12" cover="http://placehold.it/150x150" path="https://youtu.be/2t15vP1PyoA">
+      <title>Grasshopper Divert | Single Cam</title>
+      <description>On August 13th, the Falcon 9 test rig (code name Grasshopper) completed a divert test, flying to a 250m altitude with a 100m lateral maneuver before returning to the center of the pad.</description>
+      <tags>
+        <!-- TODO: Element with 1 Attribute? -->
+        <tag>spacex</tag>
+        <tag>rockets</tag>
+        <tag>grasshopper</tag>
+      </tags>
+    </video>
+    <video id="v_5" quality="720p" length="00:02:30" cover="http://placehold.it/150x150" path="https://youtu.be/CgIghRD4-ao">
+      <title>Falcon 9-Reusable (F9-R) 1st Stage Firing</title>
+      <description>Test firing of the first stage of F9-R--advanced prototype for the world's first reusable rocket.</description>
+      <tags>
+        <!-- TODO: Element with 1 Attribute? -->
+        <tag>spacex</tag>
+        <tag>rockets</tag>
+        <tag>falcon9</tag>
+      </tags>
+    </video>
+    <video id="v_6" quality="720p" length="00:00:59" cover="http://placehold.it/150x150" path="https://youtu.be/LwbUilUa4K4">
+      <title>One Year Ago Today | Dragon's First Trip to Station</title>
+      <tags>
+        <!-- TODO: Element with 1 Attribute? -->
+        <tag>spacex</tag>
+      </tags>
+    </video>
+    <video id="v_7" quality="720p" length="00:01:26" cover="http://placehold.it/150x150" path="https://youtu.be/ujX6CuRELFE">
+      <title>This is SpaceX</title>
+      <description>SpaceX designs, manufactures, and launches the world's most advanced rockets and spacecraft.</description>
+      <tags>
+        <!-- TODO: Element with 1 Attribute? -->
+        <tag>spacex</tag>
+        <tag>rockets</tag>
+      </tags>
+    </video>
+    <video id="v_8" quality="1080p" length="01:35:32" cover="http://placehold.it/150x150" path="https://youtu.be/90CkXVF-Q8M">
+      <title>Before the Flood - Full Movie | National Geographic</title>
+      <description>Join Leonardo DiCaprio as he explores the topic of climate change, and discovers what must be done today to prevent catastrophic disruption of life on our planet.</description>
+      <tags>
+        <!-- TODO: Element with 1 Attribute? -->
+        <tag>leo</tag>
+        <tag>globalwarming</tag>
+      </tags>
+    </video>
+    <video id="v_9" quality="1080p" length="01:35:32" cover="http://placehold.it/150x150" path="https://youtu.be/mPuTlZYDbh4">
+      <title>Before MARS | MARS</title>
+      <description>Before MARS" is the dramatic backstory of Hana and Joon Seung, principal characters in the upcoming series "MARS" on the National Geographic Channel.</description>
+      <tags>
+        <!-- TODO: Element with 1 Attribute? -->
+        <tag>mars</tag>
+      </tags>
+    </video>
+  </videos>
+
+  <playlists>
+    <!-- Unique: id -->
+    <!-- Required Creator -->
+    <playlist id="p_0" order="random" username="lsvinicius" cover="http://placehold.it/150x150">
+      <!-- Optional: administrator, editor -->
+      <title>SpaceX Featured Videos</title>
+      <description>Collection of my favorite SpaceX videos</description>
+      <creation_date>10/10/2015</creation_date>
+    </playlist>
+    <playlist id="p_1" order="sorted" username="ehezequiel" cover="http://placehold.it/150x150">
+      <!-- Optional: administrator, editor -->
+      <title>National Geographic Featured Videos</title>
+      <description>Collection of my favorite National Geographic videos</description>
+      <creation_date>10/11/2015</creation_date>
+    </playlist>
+  </playlists>
+
+  <playlists_videos>
+    <playlist_video playlist_id="p_0" video_id="v_0"/>
+    <playlist_video playlist_id="p_0" video_id="v_1"/>
+    <playlist_video playlist_id="p_0" video_id="v_2"/>
+    <playlist_video playlist_id="p_0" video_id="v_3"/>
+    <playlist_video playlist_id="p_0" video_id="v_4"/>
+    <playlist_video playlist_id="p_0" video_id="v_5"/>
+    <playlist_video playlist_id="p_0" video_id="v_6"/>
+    <playlist_video playlist_id="p_0" video_id="v_7"/>
+    <playlist_video playlist_id="p_1" video_id="v_8"/>
+    <playlist_video playlist_id="p_1" video_id="v_9"/>
+    <playlist_video playlist_id="p_1" video_id="v_9"/>
+    <playlist_video playlist_id="p_1" video_id="v_9"/>
+    <playlist_video playlist_id="p_1" video_id="v_9"/>
+  </playlists_videos>
+
+  <playlists_administrators>
+    <administrator playlist_id="p_0" username="evfernando"/>
+    <administrator playlist_id="p_0" username="ccharoldo"/>
+    <administrator playlist_id="p_1" username="peanacleto"/>
+  </playlists_administrators>
+
+  <playlists_editors>
+    <editor playlist_id="p_0" username="adduda"/>
+    <editor playlist_id="p_0" username="peanacleto"/>
+    <editor playlist_id="p_1" username="adduda"/>
+  </playlists_editors>
+
+  <playlists_subscribers>
+    <subscriber playlist_id="p_0" username="evfernando"/>
+    <subscriber playlist_id="p_0" username="ccharoldo"/>
+    <subscriber playlist_id="p_0" username="ehezequiel"/>
+    <subscriber playlist_id="p_0" username="adduda"/>
+    <subscriber playlist_id="p_0" username="peanacleto"/>
+    <subscriber playlist_id="p_1" username="ehezequiel"/>
+    <subscriber playlist_id="p_1" username="adduda"/>
+    <subscriber playlist_id="p_1" username="peanacleto"/>
+    <subscriber playlist_id="p_1" username="lsvinicius"/>
+  </playlists_subscribers>
+
+  <playlists_requests>
+    <request playlist_id="p_1" username="lsvinicius"/>
+  </playlists_requests>
+
+  <playlists_views>
+    <view username="lsvinicius" playlist_id="p_0" video_id="v_0" stopped="00:00:10"/>
+    <view username="lsvinicius" playlist_id="p_1" video_id="v_8" stopped="00:00:20"/>
+    <view username="lsvinicius" playlist_id="p_0" video_id="v_2" stopped="00:00:30"/>
+    <view username="evfernando" playlist_id="p_0" video_id="v_0" stopped="00:00:40"/>
+    <view username="evfernando" playlist_id="p_0" video_id="v_1" stopped="00:00:05"/>
+    <view username="ccharoldo" playlist_id="p_1" video_id="v_8" stopped="00:00:15"/>
+    <view username="ehezequiel" playlist_id="p_1" video_id="v_8" stopped="00:00:25"/>
+    <view username="adduda" playlist_id="p_0" video_id="v_0" stopped="00:00:35"/>
+    <view username="adduda" playlist_id="p_0" video_id="v_1" stopped="00:00:45"/>
+    <view username="adduda" playlist_id="p_1" video_id="v_8" stopped="00:00:10"/>
+    <view username="peanacleto" playlist_id="p_0" video_id="v_5" stopped="00:00:20"/>
+  </playlists_views>
+
+  <comments>
+    <comment id="c_0" service="playlists">
+      <date>10/10/2016</date>
+      <time>11:00:00</time>
+      <likes>1</likes>
+      <dislikes>0</dislikes>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_1" service="videos">
+      <date>10/10/2016</date>
+      <time>11:10:00</time>
+      <likes>3</likes>
+      <dislikes>1</dislikes>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_2" service="videos">
+      <date>11/10/2016</date>
+      <time>11:15:00</time>
+      <likes>1</likes>
+      <dislikes>6</dislikes>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_3" service="response">
+      <date>12/10/2016</date>
+      <time>11:20:00</time>
+      <likes>3</likes>
+      <dislikes>3</dislikes>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_4" service="response">
+      <date>13/10/2016</date>
+      <time>11:25:00</time>
+      <likes>0</likes>
+      <dislikes>0</dislikes>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_5" service="response">
+      <date>14/10/2016</date>
+      <time>11:30:00</time>
+      <likes>2</likes>
+      <dislikes>1</dislikes>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_6" service="videos">
+      <date>15/10/2016</date>
+      <time>11:35:00</time>
+      <likes>10</likes>
+      <dislikes>4</dislikes>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_7" service="videos">
+      <date>16/10/2016</date>
+      <time>11:40:00</time>
+      <likes>10</likes>
+      <dislikes>1</dislikes>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+  </comments>
+
+</XMLTube>
