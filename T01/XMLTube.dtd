@@ -7,11 +7,11 @@
 <!ATTLIST user
         username ID #REQUIRED
         password CDATA #REQUIRED
-        photo CDATA #REQUIRED
+        photo CDATA #IMPLIED
         >
 
 <!ELEMENT videos (video*)>
-<!ELEMENT video (title, description*, tags)>
+<!ELEMENT video (title, description?, tags)>
 <!ELEMENT tags (tag*)>
 
 <!ATTLIST video
@@ -23,7 +23,7 @@
         >
 
 <!ELEMENT playlists (playlist*)>
-<!ELEMENT playlist (title, description*, creation_date)>
+<!ELEMENT playlist (title, description?, creation_date)>
 
 <!ATTLIST playlist
         id ID #REQUIRED

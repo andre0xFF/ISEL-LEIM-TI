@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE XMLTube SYSTEM "XMLTube.dtd">
 
-<!-- TODO: namespaces, convert time fromminutes to time format -->
+<!-- TODO:
+  namespaces
+  convert time from minutes to time format
+  tags: Element with 1 Attribute?
+ -->
 
 <XMLTube>
   <users>
-    <!-- Unique: id, username -->
-    <!-- Optional: birthday, photo -->
-    <!-- Encrypted: password -->
     <user username="lsvinicius" password="152g!3RD:A" photo="http://placehold.it/150x150">
       <name>Lucas Simão Vinícius</name>
       <birthday>10/10/1977</birthday>
     </user>
-    <user username="evfernando" password="!3RD:A152g" photo="http://placehold.it/150x150">
+    <user username="evfernando" password="!3RD:A152g">
       <name>Eneida Viriato Fernando</name>
       <birthday>10/03/1975</birthday>
     </user>
@@ -35,13 +36,10 @@
   </users>
 
   <videos>
-    <!-- Unique: id, username -->
-    <!-- Optional: description, tag -->
     <video id="v_0" quality="720p" length="00:02:01" cover="http://placehold.it/150x150" path="https://youtu.be/0a_00nJ_Y88">
       <title>2014 | SpaceX Year in Review</title>
       <description>Relive SpaceX’s 2014 highlights: launching rockets, landing stages, and unveiling our next generation crewed spacecraft.</description>
       <tags>
-        <!-- TODO: Element with 1 Attribute? -->
         <tag>spacex</tag>
         <tag>rockets</tag>
       </tags>
@@ -50,7 +48,6 @@
       <title>F9R First Flight Test | 250m</title>
       <description>Video of Falcon 9 Reusable (F9R) taking its first test flight at our rocket development facility.</description>
       <tags>
-        <!-- TODO: Element with 1 Attribute? -->
         <tag>spacex</tag>
         <tag>rockets</tag>
         <tag>f9r</tag>
@@ -60,7 +57,6 @@
       <title>Mission Overview | SES-8 Launch</title>
       <description>On December 3, 2013 SpaceX successfully completed its first geostationary transfer mission, with the Falcon 9 rocket delivering the SES-8 satellite to its targeted 295 x 80,000 km orbit.</description>
       <tags>
-        <!-- TODO: Element with 1 Attribute? -->
         <tag>spacex</tag>
         <tag>rockets</tag>
         <tag>ses8</tag>
@@ -70,7 +66,6 @@
       <title>Grasshopper 744m Test | Single Camera (Hexacopter)</title>
       <description>On Monday, October 7th, Grasshopper completed its highest leap to date, rising to 744m altitude. The view above is taken from a single camera hexacopter, getting closer to the stage than in any previous flight.</description>
       <tags>
-        <!-- TODO: Element with 1 Attribute? -->
         <tag>spacex</tag>
         <tag>rockets</tag>
         <tag>grasshopper</tag>
@@ -80,7 +75,6 @@
       <title>Grasshopper Divert | Single Cam</title>
       <description>On August 13th, the Falcon 9 test rig (code name Grasshopper) completed a divert test, flying to a 250m altitude with a 100m lateral maneuver before returning to the center of the pad.</description>
       <tags>
-        <!-- TODO: Element with 1 Attribute? -->
         <tag>spacex</tag>
         <tag>rockets</tag>
         <tag>grasshopper</tag>
@@ -90,7 +84,6 @@
       <title>Falcon 9-Reusable (F9-R) 1st Stage Firing</title>
       <description>Test firing of the first stage of F9-R--advanced prototype for the world's first reusable rocket.</description>
       <tags>
-        <!-- TODO: Element with 1 Attribute? -->
         <tag>spacex</tag>
         <tag>rockets</tag>
         <tag>falcon9</tag>
@@ -99,7 +92,6 @@
     <video id="v_6" quality="720p" length="00:00:59" cover="http://placehold.it/150x150" path="https://youtu.be/LwbUilUa4K4">
       <title>One Year Ago Today | Dragon's First Trip to Station</title>
       <tags>
-        <!-- TODO: Element with 1 Attribute? -->
         <tag>spacex</tag>
       </tags>
     </video>
@@ -107,7 +99,6 @@
       <title>This is SpaceX</title>
       <description>SpaceX designs, manufactures, and launches the world's most advanced rockets and spacecraft.</description>
       <tags>
-        <!-- TODO: Element with 1 Attribute? -->
         <tag>spacex</tag>
         <tag>rockets</tag>
       </tags>
@@ -116,7 +107,6 @@
       <title>Before the Flood - Full Movie | National Geographic</title>
       <description>Join Leonardo DiCaprio as he explores the topic of climate change, and discovers what must be done today to prevent catastrophic disruption of life on our planet.</description>
       <tags>
-        <!-- TODO: Element with 1 Attribute? -->
         <tag>leo</tag>
         <tag>globalwarming</tag>
       </tags>
@@ -125,23 +115,18 @@
       <title>Before MARS | MARS</title>
       <description>Before MARS" is the dramatic backstory of Hana and Joon Seung, principal characters in the upcoming series "MARS" on the National Geographic Channel.</description>
       <tags>
-        <!-- TODO: Element with 1 Attribute? -->
         <tag>mars</tag>
       </tags>
     </video>
   </videos>
 
   <playlists>
-    <!-- Unique: id -->
-    <!-- Required Creator -->
     <playlist id="p_0" order="random" username="lsvinicius" cover="http://placehold.it/150x150">
-      <!-- Optional: administrator, editor -->
       <title>SpaceX Featured Videos</title>
       <description>Collection of my favorite SpaceX videos</description>
       <creation_date>10/10/2015</creation_date>
     </playlist>
     <playlist id="p_1" order="sorted" username="ehezequiel" cover="http://placehold.it/150x150">
-      <!-- Optional: administrator, editor -->
       <title>National Geographic Featured Videos</title>
       <description>Collection of my favorite National Geographic videos</description>
       <creation_date>10/11/2015</creation_date>
