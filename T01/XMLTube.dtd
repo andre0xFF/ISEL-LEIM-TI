@@ -12,7 +12,10 @@
 
 <!ELEMENT videos (video*)>
 <!ELEMENT video (title, description?, tags)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
 <!ELEMENT tags (tag*)>
+<!ELEMENT tag (#PCDATA)>
 
 <!ATTLIST video
         id ID #REQUIRED
@@ -24,6 +27,9 @@
 
 <!ELEMENT playlists (playlist*)>
 <!ELEMENT playlist (title, description?, creation_date)>
+<!--<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>-->
+<!ELEMENT creation_date (#PCDATA)>
 
 <!ATTLIST playlist
         id ID #REQUIRED
@@ -84,6 +90,11 @@
 
 <!ELEMENT comments (comment*)>
 <!ELEMENT comment (date, time, likes, dislikes, content)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT likes (#PCDATA)>
+<!ELEMENT dislikes (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
 
 <!ATTLIST comment
         id ID #REQUIRED
