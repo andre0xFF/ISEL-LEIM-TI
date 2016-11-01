@@ -8,27 +8,27 @@
     <!-- Encrypted: password -->
     <user id="0" username="lsvinicius" password="152g!3RD:A" photo="http://placehold.it/150x150">
       <name>Lucas Simão Vinícius</name>
-      <birthday></birthday>
+      <birthday>10/10/1977</birthday>
     </user>
     <user id="1" username="evfernando" password="!3RD:A152g" photo="http://placehold.it/150x150">
       <name>Eneida Viriato Fernando</name>
-      <birthday></birthday>
+      <birthday>10/03/1975</birthday>
     </user>
     <user id="2" username="ccharoldo" password="3RD:152g!A" photo="http://placehold.it/150x150">
       <name>Carlinhos Custódio Haroldo</name>
-      <birthday></birthday>
+      <birthday>10/03/1999</birthday>
     </user>
     <user id="3" username="ehezequiel" password="!3R152gD:A" photo="http://placehold.it/150x150">
       <name>Elder Helder Ezequiel</name>
-      <birthday></birthday>
+      <birthday>10/01/1985</birthday>
     </user>
     <user id="4" username="adduda" password="g!3R152D:A" photo="http://placehold.it/150x150">
       <name>Artur Duarte Duda</name>
-      <birthday></birthday>
+      <birthday>10/11/1992</birthday>
     </user>
     <user id="5" username="peanacleto" password="RD152g!3:A" photo="http://placehold.it/150x150">
       <name>Palmira Eutímio Anacleto</name>
-      <birthday></birthday>
+      <birthday>10/12/1980</birthday>
     </user>
   </users>
 
@@ -115,11 +115,11 @@
   <playlists>
     <!-- Unique: id -->
     <!-- Required Creator -->
-    <playlist id="0" order="random/sorted_by" creator_id="" cover="http://">
+    <playlist id="0" order="random/sorted_by" creator_id="" cover="http://placehold.it/150x150">
       <!-- Optional: administrator, editor -->
-      <title></title>
-      <description></description>
-      <creation_date></creation_date>
+      <title>SpaceX Featured Videos</title>
+      <description>Collection of my favorite SpaceX videos</description>
+      <creation_date>10/10/2015</creation_date>
     </playlist>
   </playlists>
 
@@ -162,70 +162,54 @@
   </playlists_views>
 
   <comments>
-    <comment id="0">
+    <comment id="0" service="playlists" service_id="0">
       <date>10/10/2016</date>
       <likes>1</likes>
       <dislikes>0</dislikes>
       <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text>
     </comment>
-    <comment id="1">
+    <comment id="1" service="videos" service_id="0">
       <date>10/10/2016</date>
       <likes>3</likes>
       <dislikes>1</dislikes>
       <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text>
     </comment>
-    <comment id="2">
+    <comment id="2" service="videos" service_id="1">
       <date>11/10/2016</date>
       <likes>1</likes>
       <dislikes>6</dislikes>
       <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text>
     </comment>
-    <comment id="3">
+    <comment id="3" service="response" service_id="0">
       <date>12/10/2016</date>
       <likes>3</likes>
       <dislikes>3</dislikes>
       <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text>
     </comment>
-    <comment id="4">
+    <comment id="4" service="response" service_id="1">
       <date>13/10/2016</date>
       <likes>0</likes>
       <dislikes>0</dislikes>
       <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text>
     </comment>
-    <comment id="5">
+    <comment id="5" service="response" service_id="2">
       <date>14/10/2016</date>
       <likes>2</likes>
       <dislikes>1</dislikes>
       <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text>
     </comment>
-    <comment id="6">
+    <comment id="6" service="videos" service_id="2">
       <date>15/10/2016</date>
       <likes>10</likes>
       <dislikes>4</dislikes>
       <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text>
     </comment>
-    <comment id="7">
+    <comment id="7" service="videos" service_id="3">
       <date>16/10/2016</date>
       <likes>10</likes>
       <dislikes>1</dislikes>
       <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text>
     </comment>
   </comments>
-
-  <videos_comments>
-    <comment id="" video=""/>
-    <comment id="" video=""/>
-    <comment id="" video=""/>
-  </videos_comments>
-
-  <playlists_comments>
-    <comment id="" playlist=""/>
-    <comment id="" playlist=""/>
-    <comment id="" playlist=""/>
-  </playlists_comments>
-
-  <comments_responses>
-    <comment id="" response=""/>
-  </comments_responses>
 
 </Social_Network>
