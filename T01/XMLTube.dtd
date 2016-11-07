@@ -98,5 +98,6 @@
 
 <!ATTLIST comment
         id ID #REQUIRED
-        service (playlists | videos | response) #REQUIRED
+        reference IDREF #REQUIRED
+        parent_id IDREF #IMPLIED
         >

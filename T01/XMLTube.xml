@@ -5,6 +5,8 @@
   namespaces
   tags: Element with 1 Attribute?
   change photos/images placeholders
+  change Lorem ipsum dolor
+  remove service from comments and use only reference ?
  -->
 
 <XMLTube>
@@ -124,12 +126,12 @@
     <playlist id="p_0" order="random" username="lsvinicius" cover="http://placehold.it/150x150">
       <title>SpaceX Featured Videos</title>
       <description>Collection of my favorite SpaceX videos</description>
-      <creation_date>10/10/2015</creation_date>
+      <creation_date>2015/10/10</creation_date>
     </playlist>
     <playlist id="p_1" order="sorted" username="ehezequiel" cover="http://placehold.it/150x150">
       <title>National Geographic Featured Videos</title>
       <description>Collection of my favorite National Geographic videos</description>
-      <creation_date>10/11/2015</creation_date>
+      <creation_date>2015/10/11</creation_date>
     </playlist>
   </playlists>
 
@@ -192,57 +194,57 @@
   </playlists_views>
 
   <comments>
-    <comment id="c_0" service="playlists">
-      <date>10/10/2016</date>
+    <comment id="c_0" reference="v_0">
+      <date>2016/10/10</date>
       <time>11:00:00</time>
       <likes>1</likes>
       <dislikes>0</dislikes>
       <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
     </comment>
-    <comment id="c_1" service="videos">
-      <date>10/10/2016</date>
+    <comment id="c_1" reference="v_0" parent_id="c_0">
+      <date>2016/10/10</date>
       <time>11:10:00</time>
       <likes>3</likes>
       <dislikes>1</dislikes>
       <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
     </comment>
-    <comment id="c_2" service="videos">
-      <date>11/10/2016</date>
+    <comment id="c_2" reference="v_0" parent_id="c_0">
+      <date>2016/10/11</date>
       <time>11:15:00</time>
       <likes>1</likes>
       <dislikes>6</dislikes>
       <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
     </comment>
-    <comment id="c_3" service="response">
-      <date>12/10/2016</date>
+    <comment id="c_3" reference="v_4">
+      <date>2016/10/12</date>
       <time>11:20:00</time>
       <likes>3</likes>
       <dislikes>3</dislikes>
       <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
     </comment>
-    <comment id="c_4" service="response">
-      <date>13/10/2016</date>
+    <comment id="c_4" reference="v_4" parent_id="c_3">
+      <date>2016/10/13</date>
       <time>11:25:00</time>
       <likes>0</likes>
       <dislikes>0</dislikes>
       <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
     </comment>
-    <comment id="c_5" service="response">
-      <date>14/10/2016</date>
+    <comment id="c_5" reference="v_4" parent_id="c_4">
+      <date>2016/10/14</date>
       <time>11:30:00</time>
       <likes>2</likes>
       <dislikes>1</dislikes>
       <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
     </comment>
-    <comment id="c_6" service="videos">
-      <date>15/10/2016</date>
+    <comment id="c_6" reference="v_4" parent_id="c_4">
+      <date>2016/10/15</date>
       <time>11:35:00</time>
       <likes>10</likes>
       <dislikes>4</dislikes>
       <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
     </comment>
-    <comment id="c_7" service="videos">
-      <date>16/10/2016</date>
+    <comment id="c_7" reference="p_1">
+      <date>2016/10/16</date>
       <time>11:40:00</time>
       <likes>10</likes>
       <dislikes>1</dislikes>
