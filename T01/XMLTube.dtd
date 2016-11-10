@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!ENTITY youtube_video "https://youtu.be/">
+<!ENTITY youtube_thumbnail "http://img.youtube.com/vi/">
+<!ENTITY youtube_thumbnail_hq "/hqdefault.jpg">
+<!ENTITY youtube_thumbnail_mq "/hqdefault.jpg">
+<!ENTITY youtube_thumbnail_sd "/sddefault.jpg">
+<!ENTITY youtube_thumbnail_max "/maxresdefault.jpg">
+<!ENTITY placeholder_150x150 "http://placehold.it/150x150">
+
 <!ELEMENT users (user*)>
 <!ELEMENT user (name, birthday?)>
 <!ELEMENT name (#PCDATA)>
@@ -11,17 +20,19 @@
         >
 
 <!ELEMENT videos (video*)>
-<!ELEMENT video (title, description?, tags)>
+<!ELEMENT video (title, published_date, description?, tags)>
 <!ELEMENT description (#PCDATA)>
+<!ELEMENT published_date (#PCDATA)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT tags (tag*)>
 <!ELEMENT tag (#PCDATA)>
 
 <!ATTLIST video
         id ID #REQUIRED
+        username IDREF #REQUIRED
         quality (144p | 240p | 360p | 480p | 720p | 1080p | 1440p | 2160p) #REQUIRED
         length CDATA #REQUIRED
-        cover CDATA #IMPLIED
+        thumbnail CDATA #IMPLIED
         path CDATA #REQUIRED
         >
 
@@ -89,15 +100,31 @@
         >
 
 <!ELEMENT comments (comment*)>
-<!ELEMENT comment (date, time, likes, dislikes, content)>
+<!ELEMENT comment (date, time, content)>
 <!ELEMENT date (#PCDATA)>
 <!ELEMENT time (#PCDATA)>
-<!ELEMENT likes (#PCDATA)>
-<!ELEMENT dislikes (#PCDATA)>
 <!ELEMENT content (#PCDATA)>
 
 <!ATTLIST comment
         id ID #REQUIRED
         reference IDREF #REQUIRED
         parent_id IDREF #IMPLIED
+        >
+
+<!ELEMENT likes_dislikes (like* | dislike*)*>
+<!ELEMENT like EMPTY>
+<!ELEMENT dislike EMPTY>
+
+<!ATTLIST like
+        video_id IDREF #IMPLIED
+        playlist_id IDREF #IMPLIED
+        comment_id IDREF #IMPLIED
+        username IDREF #REQUIRED
+        >
+
+<!ATTLIST dislike
+        video_id IDREF #IMPLIED
+        playlist_id IDREF #IMPLIED
+        comment_id IDREF #IMPLIED
+        username IDREF #REQUIRED
         >
