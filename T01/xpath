@@ -17,6 +17,9 @@ All video titles that an user liked:
 //videos/video[@id=//likes_dislikes/like[@username="adduda"]/@video_id]/title
 
 Names of the users with more than 5 published videos:
+//users/user[//videos/video/@username = @username]/name
+//comments/comment[not(@parent_id) and month-from-dateTime(date) = 10]
+year-from-dateTime(xs:dateTime("2005-01-10T00:00:00"))
 
 1st level comments in February of this year grouped by video title:
 
