@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<!--
 <!ENTITY youtube_video "https://youtu.be/">
 <!ENTITY youtube_thumbnail "http://img.youtube.com/vi/">
 <!ENTITY youtube_thumbnail_hq "/hqdefault.jpg">
@@ -7,6 +7,8 @@
 <!ENTITY youtube_thumbnail_sd "/sddefault.jpg">
 <!ENTITY youtube_thumbnail_max "/maxresdefault.jpg">
 <!ENTITY placeholder_150x150 "http://placehold.it/150x150">
+-->
+<!ELEMENT XMLTube (users, videos, playlists, playlists_videos, playlists_administrators, playlists_editors, playlists_subscribers, playlists_requests, playlists_views, comments, likes_dislikes)>
 
 <!ELEMENT users (user*)>
 <!ELEMENT user (name, birthday?)>
@@ -49,7 +51,7 @@
         cover CDATA #REQUIRED
         >
 
-<!ELEMENT playlist_videos (playlist_video*)>
+<!ELEMENT playlists_videos (playlist_video*)>
 <!ELEMENT playlist_video EMPTY>
 
 <!ATTLIST playlist_video
