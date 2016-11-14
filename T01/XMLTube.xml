@@ -41,7 +41,7 @@
   <videos>
     <video id="v_0" username="adduda" quality="720p" length="00:02:01" thumbnail="http://img.youtube.com/vi/0a_00nJ_Y88/hqdefault.jpg" path="https://youtu.be/0a_00nJ_Y88">
       <title>2014 | SpaceX Year in Review</title>
-      <published_date>2016/08/08</published_date>
+      <published_date>2016/01/08</published_date>
       <description>Relive SpaceX’s 2014 highlights: launching rockets, landing stages, and unveiling our next generation crewed spacecraft.</description>
       <tags>
         <tag>spacex</tag>
@@ -205,42 +205,42 @@
   </playlists_views>
 
   <comments>
-    <comment id="c_0" reference="v_0">
-      <date>2016-10-10T00:00</date>
+    <comment id="c_0" reference="v_0" username="ccharoldo">
+      <date>2016/02/10</date>
       <time>11:00:00</time>
       <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
     </comment>
-    <comment id="c_1" reference="v_0" parent_id="c_0">
+    <comment id="c_1" reference="v_0" parent_id="c_0" username="adduda">
       <date>2016/10/10</date>
       <time>11:10:00</time>
       <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
     </comment>
-    <comment id="c_2" reference="v_0" parent_id="c_0">
+    <comment id="c_2" reference="v_0" parent_id="c_0" username="evfernando">
       <date>2016/10/11</date>
       <time>11:15:00</time>
       <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
     </comment>
-    <comment id="c_3" reference="v_4">
+    <comment id="c_3" reference="v_4" username="ccharoldo">
       <date>2016/10/12</date>
       <time>11:20:00</time>
       <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
     </comment>
-    <comment id="c_4" reference="v_4" parent_id="c_3">
+    <comment id="c_4" reference="v_4" parent_id="c_3" username="adduda">
       <date>2016/10/13</date>
       <time>11:25:00</time>
       <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
     </comment>
-    <comment id="c_5" reference="v_4" parent_id="c_4">
+    <comment id="c_5" reference="v_4" parent_id="c_4" username="lsvinicius">
       <date>2016/10/14</date>
       <time>11:30:00</time>
       <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
     </comment>
-    <comment id="c_6" reference="v_4" parent_id="c_4">
+    <comment id="c_6" reference="v_4" parent_id="c_4" username="ehezequiel">
       <date>2016/10/15</date>
       <time>11:35:00</time>
       <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
     </comment>
-    <comment id="c_7" reference="p_1">
+    <comment id="c_7" reference="p_1" username="ccharoldo">
       <date>2016/10/16</date>
       <time>11:40:00</time>
       <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>

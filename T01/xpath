@@ -17,10 +17,10 @@ All video titles that an user liked:
 //videos/video[@id=//likes_dislikes/like[@username="adduda"]/@video_id]/title
 
 Names of the users with more than 5 published videos:
-//users/user[//videos/video/@username = @username]/name
-//comments/comment[not(@parent_id) and month-from-dateTime(date) = 10]
-year-from-dateTime(xs:dateTime("2005-01-10T00:00:00"))
+for $i in //users/user return if(count(//videos/video[@username = $i/@username]/title) >= 5) then //users/user[@username = $i/@username]/name else 0
 
-1st level comments in February of this year grouped by video title:
+1st level comments in February of this year of a specific video title:
+for $i in //comments/comment return if(substring($i/date/text(), 6, 2)="02") then $i[@reference=//videos/video/@id][//videos/video/title="2014 | SpaceX Year in Review"][not(@parent_id)]/content else 0
 
-Name of the users that commented, at any level, grouped by video title:
+Name of the users that commented, at any level, a specific video title:
+//users/user[@username=//comments/comment[@reference=//videos/video[title = "2014 | SpaceX Year in Review"]/@id]/@username]/name

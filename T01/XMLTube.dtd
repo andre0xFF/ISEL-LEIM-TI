@@ -8,7 +8,10 @@
 <!ENTITY youtube_thumbnail_max "/maxresdefault.jpg">
 <!ENTITY placeholder_150x150 "http://placehold.it/150x150">
 -->
-<!ELEMENT XMLTube (users, videos, playlists, playlists_videos, playlists_administrators, playlists_editors, playlists_subscribers, playlists_requests, playlists_views, comments, likes_dislikes)>
+<!ELEMENT XMLTube (
+		users, videos, playlists, playlists_videos, playlists_administrators, playlists_editors,
+		playlists_subscribers, playlists_requests, playlists_views, comments, likes_dislikes
+	)>
 
 <!ELEMENT users (user*)>
 <!ELEMENT user (name, birthday?)>
@@ -19,7 +22,7 @@
         username ID #REQUIRED
         password CDATA #REQUIRED
         photo CDATA #IMPLIED
-        >
+	>
 
 <!ELEMENT videos (video*)>
 <!ELEMENT video (title, published_date, description?, tags)>
@@ -36,7 +39,7 @@
         length CDATA #REQUIRED
         thumbnail CDATA #IMPLIED
         path CDATA #REQUIRED
-        >
+	>
 
 <!ELEMENT playlists (playlist*)>
 <!ELEMENT playlist (title, description?, creation_date)>
@@ -49,7 +52,7 @@
         order (random | sorted) "random"
         username IDREF #REQUIRED
         cover CDATA #REQUIRED
-        >
+	>
 
 <!ELEMENT playlists_videos (playlist_video*)>
 <!ELEMENT playlist_video EMPTY>
@@ -57,7 +60,7 @@
 <!ATTLIST playlist_video
         playlist_id IDREF #REQUIRED
         video_id IDREF #REQUIRED
-        >
+	>
 
 <!ELEMENT playlists_administrators (administrator*)>
 <!ELEMENT administrator EMPTY>
@@ -65,7 +68,7 @@
 <!ATTLIST administrator
         playlist_id IDREF #REQUIRED
         username IDREF #REQUIRED
-        >
+	>
 
 <!ELEMENT playlists_editors (editor*)>
 <!ELEMENT editor EMPTY>
@@ -73,7 +76,7 @@
 <!ATTLIST editor
         playlist_id IDREF #REQUIRED
         username IDREF #REQUIRED
-        >
+	>
 
 <!ELEMENT playlists_subscribers (subscriber*)>
 <!ELEMENT subscriber EMPTY>
@@ -81,7 +84,7 @@
 <!ATTLIST subscriber
         playlist_id IDREF #REQUIRED
         username IDREF #REQUIRED
-        >
+	>
 
 <!ELEMENT playlists_requests (request*)>
 <!ELEMENT request EMPTY>
@@ -89,7 +92,7 @@
 <!ATTLIST request
         playlist_id IDREF #REQUIRED
         username IDREF #REQUIRED
-        >
+	>
 
 <!ELEMENT playlists_views (view*)>
 <!ELEMENT view EMPTY>
@@ -99,7 +102,7 @@
         playlist_id IDREF #REQUIRED
         video_id IDREF #REQUIRED
         stopped CDATA #IMPLIED
-        >
+	>
 
 <!ELEMENT comments (comment*)>
 <!ELEMENT comment (date, time, content)>
@@ -111,7 +114,8 @@
         id ID #REQUIRED
         reference IDREF #REQUIRED
         parent_id IDREF #IMPLIED
-        >
+				username IDREF #REQUIRED
+	>
 
 <!ELEMENT likes_dislikes (like* | dislike*)*>
 <!ELEMENT like EMPTY>
@@ -122,11 +126,11 @@
         playlist_id IDREF #IMPLIED
         comment_id IDREF #IMPLIED
         username IDREF #REQUIRED
-        >
+	>
 
 <!ATTLIST dislike
         video_id IDREF #IMPLIED
         playlist_id IDREF #IMPLIED
         comment_id IDREF #IMPLIED
         username IDREF #REQUIRED
-        >
+	>
