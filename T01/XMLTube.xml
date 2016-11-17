@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE XMLTube SYSTEM "XMLTube.dtd">
 
-<!-- TODO:
-  namespaces
-  tags: Element with 1 Attribute?
-  change photos/images placeholders
-  change Lorem ipsum dolor
-  remove service from comments and use only reference ?
-  remove video thumbnail attributes and use youtube_id only, plus entities
- -->
-
-<XMLTube>
+<XMLTube xmlns="urn:xmltube:ns">
   <users>
     <user username="lsvinicius" password="152g!3RD:A" photo="&placeholder_150x150;">
       <name>Lucas Simão Vinícius</name>
@@ -26,7 +17,6 @@
     </user>
     <user username="ehezequiel" password="!3R152gD:A" photo="&placeholder_150x150;">
       <name>Elder Helder Ezequiel</name>
-      <birthday>10/01/1985</birthday>
     </user>
     <user username="adduda" password="g!3R152D:A" photo="&placeholder_150x150;">
       <name>Artur Duarte Duda</name>
@@ -39,7 +29,7 @@
   </users>
 
   <videos>
-    <video id="v_0" username="adduda" quality="720p" length="00:02:01" thumbnail="&youtube_thumbnail;0a_00nJ_Y88&youtube_thumbnail_hq;" path="&youtube_video;0a_00nJ_Y88">
+    <video id="v_0" username="adduda" length="00:02:01" thumbnail="&youtube_thumbnail;0a_00nJ_Y88&youtube_thumbnail_hq;" link="&youtube_video;0a_00nJ_Y88">
       <title>2014 | SpaceX Year in Review</title>
       <published_date>2016/01/08</published_date>
       <description>Relive SpaceX’s 2014 highlights: launching rockets, landing stages, and unveiling our next generation crewed spacecraft.</description>
@@ -47,8 +37,14 @@
         <tag>spacex</tag>
         <tag>rockets</tag>
       </tags>
+      <quality>
+        <quality_type type="720p"/>
+        <quality_type type="480p"/>
+        <quality_type type="360p"/>
+        <quality_type type="240p"/>
+      </quality>
     </video>
-    <video id="v_1" username="adduda" quality="720p" length="00:01:52" thumbnail="&youtube_thumbnail;0UjWqQPWmsY&youtube_thumbnail_hq;" path="&youtube_video;0UjWqQPWmsY">
+    <video id="v_1" username="adduda" length="00:01:52" thumbnail="&youtube_thumbnail;0UjWqQPWmsY&youtube_thumbnail_hq;" link="&youtube_video;0UjWqQPWmsY">
       <title>F9R First Flight Test | 250m</title>
       <published_date>2016/08/08</published_date>
       <description>Video of Falcon 9 Reusable (F9R) taking its first test flight at our rocket development facility.</description>
@@ -57,8 +53,14 @@
         <tag>rockets</tag>
         <tag>f9r</tag>
       </tags>
+      <quality>
+        <quality_type type="720p"/>
+        <quality_type type="480p"/>
+        <quality_type type="360p"/>
+        <quality_type type="240p"/>
+      </quality>
     </video>
-    <video id="v_2" username="adduda" quality="720p" length="00:01:31" thumbnail="&youtube_thumbnail;24i8G5a5d5Q&youtube_thumbnail_hq;" path="&youtube_video;24i8G5a5d5Q">
+    <video id="v_2" username="adduda" length="00:01:31" thumbnail="&youtube_thumbnail;24i8G5a5d5Q&youtube_thumbnail_hq;" link="&youtube_video;24i8G5a5d5Q">
       <title>Mission Overview | SES-8 Launch</title>
       <published_date>2016/08/09</published_date>
       <description>On December 3, 2013 SpaceX successfully completed its first geostationary transfer mission, with the Falcon 9 rocket delivering the SES-8 satellite to its targeted 295 x 80,000 km orbit.</description>
@@ -67,8 +69,14 @@
         <tag>rockets</tag>
         <tag>ses8</tag>
       </tags>
+      <quality>
+        <quality_type type="720p"/>
+        <quality_type type="480p"/>
+        <quality_type type="360p"/>
+        <quality_type type="240p"/>
+      </quality>
     </video>
-    <video id="v_3" username="adduda" quality="720p" length="00:01:36" thumbnail="&youtube_thumbnail;9ZDkItO-0a4&youtube_thumbnail_hq;" path="&youtube_video;9ZDkItO-0a4">
+    <video id="v_3" username="adduda" length="00:01:36" thumbnail="&youtube_thumbnail;9ZDkItO-0a4&youtube_thumbnail_hq;" link="&youtube_video;9ZDkItO-0a4">
       <title>Grasshopper 744m Test | Single Camera (Hexacopter)</title>
       <published_date>2016/08/09</published_date>
       <description>On Monday, October 7th, Grasshopper completed its highest leap to date, rising to 744m altitude. The view above is taken from a single camera hexacopter, getting closer to the stage than in any previous flight.</description>
@@ -77,8 +85,14 @@
         <tag>rockets</tag>
         <tag>grasshopper</tag>
       </tags>
+      <quality>
+        <quality_type type="720p"/>
+        <quality_type type="480p"/>
+        <quality_type type="360p"/>
+        <quality_type type="240p"/>
+      </quality>
     </video>
-    <video id="v_4" username="adduda" quality="720p" length="00:01:12" thumbnail="&youtube_thumbnail;2t15vP1PyoA&youtube_thumbnail_hq;" path="&youtube_video;2t15vP1PyoA">
+    <video id="v_4" username="adduda" length="00:01:12" thumbnail="&youtube_thumbnail;2t15vP1PyoA&youtube_thumbnail_hq;" link="&youtube_video;2t15vP1PyoA">
       <title>Grasshopper Divert | Single Cam</title>
       <published_date>2016/08/10</published_date>
       <description>On August 13th, the Falcon 9 test rig (code name Grasshopper) completed a divert test, flying to a 250m altitude with a 100m lateral maneuver before returning to the center of the pad.</description>
@@ -87,8 +101,14 @@
         <tag>rockets</tag>
         <tag>grasshopper</tag>
       </tags>
+      <quality>
+        <quality_type type="720p"/>
+        <quality_type type="480p"/>
+        <quality_type type="360p"/>
+        <quality_type type="240p"/>
+      </quality>
     </video>
-    <video id="v_5" username="adduda" quality="720p" length="00:02:30" thumbnail="&youtube_thumbnail;CgIghRD4-ao&youtube_thumbnail_hq;" path="&youtube_video;CgIghRD4-ao">
+    <video id="v_5" username="adduda" length="00:02:30" thumbnail="&youtube_thumbnail;CgIghRD4-ao&youtube_thumbnail_hq;" link="&youtube_video;CgIghRD4-ao">
       <title>Falcon 9-Reusable (F9-R) 1st Stage Firing</title>
       <published_date>2016/08/10</published_date>
       <description>Test firing of the first stage of F9-R--advanced prototype for the world's first reusable rocket.</description>
@@ -97,15 +117,27 @@
         <tag>rockets</tag>
         <tag>falcon9</tag>
       </tags>
+      <quality>
+        <quality_type type="720p"/>
+        <quality_type type="480p"/>
+        <quality_type type="360p"/>
+        <quality_type type="240p"/>
+      </quality>
     </video>
-    <video id="v_6" username="ehezequiel" quality="720p" length="00:00:59" thumbnail="&youtube_thumbnail;LwbUilUa4K4&youtube_thumbnail_hq;" path="&youtube_video;LwbUilUa4K4">
+    <video id="v_6" username="ehezequiel" length="00:00:59" thumbnail="&youtube_thumbnail;LwbUilUa4K4&youtube_thumbnail_hq;" link="&youtube_video;LwbUilUa4K4">
       <title>One Year Ago Today | Dragon's First Trip to Station</title>
       <published_date>2016/08/11</published_date>
       <tags>
         <tag>spacex</tag>
       </tags>
+      <quality>
+        <quality_type type="720p"/>
+        <quality_type type="480p"/>
+        <quality_type type="360p"/>
+        <quality_type type="240p"/>
+      </quality>
     </video>
-    <video id="v_7" username="peanacleto" quality="720p" length="00:01:26" thumbnail="&youtube_thumbnail;ujX6CuRELFE&youtube_thumbnail_hq;" path="&youtube_video;ujX6CuRELFE">
+    <video id="v_7" username="peanacleto" length="00:01:26" thumbnail="&youtube_thumbnail;ujX6CuRELFE&youtube_thumbnail_hq;" link="&youtube_video;ujX6CuRELFE">
       <title>This is SpaceX</title>
       <published_date>2016/08/12</published_date>
       <description>SpaceX designs, manufactures, and launches the world's most advanced rockets and spacecraft.</description>
@@ -113,8 +145,14 @@
         <tag>spacex</tag>
         <tag>rockets</tag>
       </tags>
+      <quality>
+        <quality_type type="720p"/>
+        <quality_type type="480p"/>
+        <quality_type type="360p"/>
+        <quality_type type="240p"/>
+      </quality>
     </video>
-    <video id="v_8" username="peanacleto" quality="1080p" length="01:35:32" thumbnail="&youtube_thumbnail;90CkXVF-Q8M&youtube_thumbnail_hq;" path="&youtube_video;90CkXVF-Q8M">
+    <video id="v_8" username="peanacleto" length="01:35:32" thumbnail="&youtube_thumbnail;90CkXVF-Q8M&youtube_thumbnail_hq;" link="&youtube_video;90CkXVF-Q8M">
       <title>Before the Flood - Full Movie | National Geographic</title>
       <published_date>2016/08/13</published_date>
       <description>Join Leonardo DiCaprio as he explores the topic of climate change, and discovers what must be done today to prevent catastrophic disruption of life on our planet.</description>
@@ -122,24 +160,35 @@
         <tag>leo</tag>
         <tag>globalwarming</tag>
       </tags>
+      <quality>
+        <quality_type type="1080p"/>
+        <quality_type type="720p"/>
+        <quality_type type="480p"/>
+        <quality_type type="360p"/>
+        <quality_type type="240p"/>
+      </quality>
     </video>
-    <video id="v_9" username="peanacleto" quality="1080p" length="01:35:32" thumbnail="&youtube_thumbnail;mPuTlZYDbh4&youtube_thumbnail_hq;" path="&youtube_video;mPuTlZYDbh4">
+    <video id="v_9" username="peanacleto" length="01:35:32" thumbnail="&youtube_thumbnail;mPuTlZYDbh4&youtube_thumbnail_hq;" link="&youtube_video;mPuTlZYDbh4">
       <title>Before MARS | MARS</title>
       <published_date>2016/08/14</published_date>
       <description>Before MARS" is the dramatic backstory of Hana and Joon Seung, principal characters in the upcoming series "MARS" on the National Geographic Channel.</description>
       <tags>
         <tag>mars</tag>
       </tags>
+      <quality>
+        <quality_type type="1080p"/>
+        <quality_type type="720p"/>
+      </quality>
     </video>
   </videos>
 
   <playlists>
-    <playlist id="p_0" order="random" username="lsvinicius" cover="&placeholder_150x150;">
+    <playlist id="p_0" order="random" username="lsvinicius" thumbnail="&placeholder_150x150;">
       <title>SpaceX Featured Videos</title>
       <description>Collection of my favorite SpaceX videos</description>
       <creation_date>2015/10/10</creation_date>
     </playlist>
-    <playlist id="p_1" order="sorted" username="ehezequiel" cover="&placeholder_150x150;">
+    <playlist id="p_1" order="sorted" username="ehezequiel" thumbnail="&placeholder_150x150;">
       <title>National Geographic Featured Videos</title>
       <description>Collection of my favorite National Geographic videos</description>
       <creation_date>2015/10/11</creation_date>
@@ -188,6 +237,9 @@
 
   <playlists_requests>
     <request playlist_id="p_1" username="lsvinicius"/>
+    <request playlist_id="p_0" username="adduda" response="yes"/>
+    <request playlist_id="p_0" username="peanacleto" response="yes"/>
+    <request playlist_id="p_1" username="adduda" response="yes"/>
   </playlists_requests>
 
   <playlists_views>
@@ -263,5 +315,10 @@
     <like video_id="v_0" username="lsvinicius" />
     <like video_id="v_0" username="ehezequiel" />
   </likes_dislikes>
+
+  <!-- <subscriptions>
+    <subscription playlist_id="" username=""/>
+    <subscription channel="" username=""/>
+  </subscriptions> -->
 
 </XMLTube>

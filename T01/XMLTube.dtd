@@ -8,10 +8,14 @@
 <!ENTITY youtube_thumbnail_max "/maxresdefault.jpg">
 <!ENTITY placeholder_150x150 "http://placehold.it/150x150">
 
-<!ELEMENT XMLTube (
+<!-- <!ELEMENT XMLTube (
 		users, videos, playlists, playlists_videos, playlists_administrators, playlists_editors,
 		playlists_subscribers, playlists_requests, playlists_views, comments, likes_dislikes
 	)>
+
+<!ATTLIST XMLTube
+				xmlns CDATA #REQUIRED
+> -->
 
 <!ELEMENT users (user*)>
 <!ELEMENT user (name, birthday?)>
@@ -25,33 +29,36 @@
 	>
 
 <!ELEMENT videos (video*)>
-<!ELEMENT video (title, published_date, description?, tags)>
+<!ELEMENT video (title, published_date, description?, tags, quality)>
 <!ELEMENT description (#PCDATA)>
 <!ELEMENT published_date (#PCDATA)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT tags (tag*)>
 <!ELEMENT tag (#PCDATA)>
+<!ELEMENT quality (quality_type+)>
+<!ELEMENT quality_types EMPTY>
 
 <!ATTLIST video
         id ID #REQUIRED
         username IDREF #REQUIRED
-        quality (144p | 240p | 360p | 480p | 720p | 1080p | 1440p | 2160p) #REQUIRED
         length CDATA #REQUIRED
         thumbnail CDATA #IMPLIED
-        path CDATA #REQUIRED
+        link CDATA #REQUIRED
+	>
+
+	<!ATTLIST quality_type
+        type (144p | 240p | 360p | 480p | 720p | 1080p | 1440p | 2160p) #REQUIRED
 	>
 
 <!ELEMENT playlists (playlist*)>
 <!ELEMENT playlist (title, description?, creation_date)>
-<!--<!ELEMENT title (#PCDATA)>
-<!ELEMENT description (#PCDATA)>-->
 <!ELEMENT creation_date (#PCDATA)>
 
 <!ATTLIST playlist
         id ID #REQUIRED
         order (random | sorted) "random"
         username IDREF #REQUIRED
-        cover CDATA #REQUIRED
+        thumbnail CDATA #IMPLIED
 	>
 
 <!ELEMENT playlists_videos (playlist_video*)>
@@ -92,6 +99,7 @@
 <!ATTLIST request
         playlist_id IDREF #REQUIRED
         username IDREF #REQUIRED
+				response CDATA "no"
 	>
 
 <!ELEMENT playlists_views (view*)>
