@@ -223,7 +223,7 @@
     <editor playlist_id="p_1" username="adduda"/>
   </playlists_editors>
 
-  <playlists_subscribers>
+  <subscribers>
     <subscriber playlist_id="p_0" username="evfernando"/>
     <subscriber playlist_id="p_0" username="ccharoldo"/>
     <subscriber playlist_id="p_0" username="ehezequiel"/>
@@ -233,7 +233,9 @@
     <subscriber playlist_id="p_1" username="adduda"/>
     <subscriber playlist_id="p_1" username="peanacleto"/>
     <subscriber playlist_id="p_1" username="lsvinicius"/>
-  </playlists_subscribers>
+    <subscriber channel="u_0" username="lsvinicius"/>
+    <subscriber channel="u_1" username="lsvinicius"/>
+  </subscribers>
 
   <playlists_requests>
     <request playlist_id="p_1" username="lsvinicius"/>
@@ -315,10 +317,5 @@
     <like video_id="v_0" username="lsvinicius" />
     <like video_id="v_0" username="ehezequiel" />
   </likes_dislikes>
-
-  <!-- <subscriptions>
-    <subscription playlist_id="" username=""/>
-    <subscription channel="" username=""/>
-  </subscriptions> -->
 
 </XMLTube>

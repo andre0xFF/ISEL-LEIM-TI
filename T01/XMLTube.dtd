@@ -8,15 +8,6 @@
 <!ENTITY youtube_thumbnail_max "/maxresdefault.jpg">
 <!ENTITY placeholder_150x150 "http://placehold.it/150x150">
 
-<!-- <!ELEMENT XMLTube (
-		users, videos, playlists, playlists_videos, playlists_administrators, playlists_editors,
-		playlists_subscribers, playlists_requests, playlists_views, comments, likes_dislikes
-	)>
-
-<!ATTLIST XMLTube
-				xmlns CDATA #REQUIRED
-> -->
-
 <!ELEMENT users (user*)>
 <!ELEMENT user (name, birthday?)>
 <!ELEMENT name (#PCDATA)>
@@ -89,7 +80,8 @@
 <!ELEMENT subscriber EMPTY>
 
 <!ATTLIST subscriber
-        playlist_id IDREF #REQUIRED
+        playlist_id IDREF #IMPLIED
+        channel IDREF #IMPLIED
         username IDREF #REQUIRED
 	>
 
