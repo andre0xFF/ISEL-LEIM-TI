@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!ENTITY youtube_video "https://youtu.be/">
+<!ENTITY youtube_thumbnail "http://img.youtube.com/vi/">
+<!ENTITY youtube_thumbnail_hq "/hqdefault.jpg">
+<!ENTITY youtube_thumbnail_mq "/hqdefault.jpg">
+<!ENTITY youtube_thumbnail_sd "/sddefault.jpg">
+<!ENTITY youtube_thumbnail_max "/maxresdefault.jpg">
+<!ENTITY placeholder_150x150 "http://placehold.it/150x150">
+
 <!ELEMENT users (user*)>
 <!ELEMENT user (name, birthday?)>
 <!ELEMENT name (#PCDATA)>
@@ -8,43 +17,48 @@
         username ID #REQUIRED
         password CDATA #REQUIRED
         photo CDATA #IMPLIED
-        >
+	>
 
 <!ELEMENT videos (video*)>
-<!ELEMENT video (title, description?, tags)>
+<!ELEMENT video (title, published_date, description?, tags, quality)>
 <!ELEMENT description (#PCDATA)>
+<!ELEMENT published_date (#PCDATA)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT tags (tag*)>
 <!ELEMENT tag (#PCDATA)>
+<!ELEMENT quality (quality_type+)>
+<!ELEMENT quality_types EMPTY>
 
 <!ATTLIST video
         id ID #REQUIRED
-        quality (144p | 240p | 360p | 480p | 720p | 1080p | 1440p | 2160p) #REQUIRED
+        username IDREF #REQUIRED
         length CDATA #REQUIRED
-        cover CDATA #IMPLIED
-        path CDATA #REQUIRED
-        >
+        thumbnail CDATA #IMPLIED
+        link CDATA #REQUIRED
+	>
+
+	<!ATTLIST quality_type
+        type (144p | 240p | 360p | 480p | 720p | 1080p | 1440p | 2160p) #REQUIRED
+	>
 
 <!ELEMENT playlists (playlist*)>
 <!ELEMENT playlist (title, description?, creation_date)>
-<!--<!ELEMENT title (#PCDATA)>
-<!ELEMENT description (#PCDATA)>-->
 <!ELEMENT creation_date (#PCDATA)>
 
 <!ATTLIST playlist
         id ID #REQUIRED
         order (random | sorted) "random"
         username IDREF #REQUIRED
-        cover CDATA #REQUIRED
-        >
+        thumbnail CDATA #IMPLIED
+	>
 
-<!ELEMENT playlist_videos (playlist_video*)>
+<!ELEMENT playlists_videos (playlist_video*)>
 <!ELEMENT playlist_video EMPTY>
 
 <!ATTLIST playlist_video
         playlist_id IDREF #REQUIRED
         video_id IDREF #REQUIRED
-        >
+	>
 
 <!ELEMENT playlists_administrators (administrator*)>
 <!ELEMENT administrator EMPTY>
@@ -52,7 +66,7 @@
 <!ATTLIST administrator
         playlist_id IDREF #REQUIRED
         username IDREF #REQUIRED
-        >
+	>
 
 <!ELEMENT playlists_editors (editor*)>
 <!ELEMENT editor EMPTY>
@@ -60,15 +74,16 @@
 <!ATTLIST editor
         playlist_id IDREF #REQUIRED
         username IDREF #REQUIRED
-        >
+	>
 
 <!ELEMENT playlists_subscribers (subscriber*)>
 <!ELEMENT subscriber EMPTY>
 
 <!ATTLIST subscriber
-        playlist_id IDREF #REQUIRED
+        playlist_id IDREF #IMPLIED
+        channel IDREF #IMPLIED
         username IDREF #REQUIRED
-        >
+	>
 
 <!ELEMENT playlists_requests (request*)>
 <!ELEMENT request EMPTY>
@@ -76,7 +91,8 @@
 <!ATTLIST request
         playlist_id IDREF #REQUIRED
         username IDREF #REQUIRED
-        >
+				response CDATA "no"
+	>
 
 <!ELEMENT playlists_views (view*)>
 <!ELEMENT view EMPTY>
@@ -86,18 +102,35 @@
         playlist_id IDREF #REQUIRED
         video_id IDREF #REQUIRED
         stopped CDATA #IMPLIED
-        >
+	>
 
 <!ELEMENT comments (comment*)>
-<!ELEMENT comment (date, time, likes, dislikes, content)>
+<!ELEMENT comment (date, time, content)>
 <!ELEMENT date (#PCDATA)>
 <!ELEMENT time (#PCDATA)>
-<!ELEMENT likes (#PCDATA)>
-<!ELEMENT dislikes (#PCDATA)>
 <!ELEMENT content (#PCDATA)>
 
 <!ATTLIST comment
         id ID #REQUIRED
         reference IDREF #REQUIRED
         parent_id IDREF #IMPLIED
-        >
+				username IDREF #REQUIRED
+	>
+
+<!ELEMENT likes_dislikes (like* | dislike*)*>
+<!ELEMENT like EMPTY>
+<!ELEMENT dislike EMPTY>
+
+<!ATTLIST like
+        video_id IDREF #IMPLIED
+        playlist_id IDREF #IMPLIED
+        comment_id IDREF #IMPLIED
+        username IDREF #REQUIRED
+	>
+
+<!ATTLIST dislike
+        video_id IDREF #IMPLIED
+        playlist_id IDREF #IMPLIED
+        comment_id IDREF #IMPLIED
+        username IDREF #REQUIRED
+	>
