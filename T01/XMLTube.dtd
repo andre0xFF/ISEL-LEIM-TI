@@ -27,7 +27,7 @@
 <!ELEMENT tags (tag*)>
 <!ELEMENT tag (#PCDATA)>
 <!ELEMENT quality (quality_type+)>
-<!ELEMENT quality_types EMPTY>
+<!-- <!ELEMENT quality_types EMPTY> -->
 
 <!ATTLIST video
         id ID #REQUIRED
@@ -37,9 +37,9 @@
         link CDATA #REQUIRED
 	>
 
-	<!ATTLIST quality_type
-        type (144p | 240p | 360p | 480p | 720p | 1080p | 1440p | 2160p) #REQUIRED
-	>
+<!ATTLIST quality_type
+     type (144p | 240p | 360p | 480p | 720p | 1080p | 1440p | 2160p) #REQUIRED
+>
 
 <!ELEMENT playlists (playlist*)>
 <!ELEMENT playlist (title, description?, creation_date)>
