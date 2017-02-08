@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!ENTITY youtube_video "https://youtu.be/">
-<!ENTITY youtube_thumbnail "http://img.youtube.com/vi/">
-<!ENTITY youtube_thumbnail_hq "/hqdefault.jpg">
-<!ENTITY youtube_thumbnail_mq "/hqdefault.jpg">
-<!ENTITY youtube_thumbnail_sd "/sddefault.jpg">
-<!ENTITY youtube_thumbnail_max "/maxresdefault.jpg">
-<!ENTITY placeholder_150x150 "http://placehold.it/150x150">
-
 <!ELEMENT users (user*)>
 <!ELEMENT user (name, birthday?)>
 <!ELEMENT name (#PCDATA)>
