@@ -34,6 +34,43 @@
       <name>Palmira Eutímio Anacleto</name>
       <birthday>1980/10/12</birthday>
     </user>
+
+    <user username="paribeiro" password="RD152g!3:A" photo="&placeholder_150x150;">
+      <name>Pedro Alves Ribeiro</name>
+      <birthday>1985/10/12</birthday>
+    </user>
+    <user username="saribeiro" password="RD152g!3:A" photo="&placeholder_150x150;">
+      <name>Susana Alves Ribeiro</name>
+      <birthday>1985/10/12</birthday>
+    </user>
+    <user username="gocunha" password="RD152g!3:A" photo="&placeholder_150x150;">
+      <name>Goncalo Oliveira Cunha</name>
+      <birthday>1987/11/02</birthday>
+    </user>
+    <user username="mocunha" password="RD152g!3:A" photo="&placeholder_150x150;">
+      <name>Maria Oliveira Cunha</name>
+      <birthday>1989/04/22</birthday>
+    </user>
+    <user username="crraposo" password="RD152g!3:A" photo="&placeholder_150x150;">
+      <name>Cristina Raposo</name>
+      <birthday>1950/01/01</birthday>
+    </user>
+    <user username="joraposo" password="RD152g!3:A" photo="&placeholder_150x150;">
+      <name>Joaquim Raposo</name>
+      <birthday>1951/07/07</birthday>
+    </user>
+    <user username="taalmeida" password="RD152g!3:A" photo="&placeholder_150x150;">
+      <name>Tiago Almeida</name>
+      <birthday>1986/09/12</birthday>
+    </user>
+    <user username="fjjafui" password="RD152g!3:A" photo="&placeholder_150x150;">
+      <name>Francisco Jacinto Jafui</name>
+      <birthday>1989/10/10</birthday>
+    </user>
+    <user username="sacantanhoso" password="RD152g!3:A" photo="&placeholder_150x150;">
+      <name>Samuel Cantanhoso</name>
+      <birthday>1986/10/12</birthday>
+    </user>
   </users>
 
   <videos>
