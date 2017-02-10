@@ -5,29 +5,29 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"/>
-    <link rel="stylesheet" href="../css/structure.css"/>
-    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../../css/structure.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
     <title>XMLTube - Maximized user visualization</title>
   </head>
 
   <body>
     <header>
-      <a href="../index.xhtml"><h1 id="logo">XML TUBE</h1></a>
+      <a href="../../index.xhtml"><h1 id="logo">XML TUBE</h1></a>
     </header>
 
     <section id="detailed">
-        <img class="user_img" src="../images/user.png" alt=""/>
+        <img class="user_img" src="../../images/{$username/@photo}" alt=""/>
 
         <section class="medium">
           <p>Lucas Simao Vinicius</p>
           <p>1977/10/10</p>
 
           <section class="minimized">
-            <a href="./detailed.xhtml"><p>lsvinicius</p></a>
-            <a href="./detailed.xhtml#published_videos"><img src="../images/video.png" alt="Videos"/>10</a>
-            <a href="./detailed.xhtml#comments"><img src="../images/comment.png" alt="Comments"/>20</a>
-            <a href="./detailed.xhtml#likes"><img src="../images/like.png" alt="Likes"/>30</a>
-            <a href="./detailed.xhtml#dislikes"><img src="../images/dislike.png" alt="Dislikes"/>40</a>
+            <a href="../detailed/{$username}.html"><p>lsvinicius</p></a>
+            <a href="../detailed/{$username}.html#published_videos"><img src="../../images/video.png" alt="Videos"/>10</a>
+            <a href="../detailed/{$username}.html#comments"><img src="../images/comment.png" alt="Comments"/>20</a>
+            <a href="../detailed/{$username}.html#likes"><img src="../images/like.png" alt="Likes"/>30</a>
+            <a href="../detailed/{$username}.html#dislikes"><img src="../images/dislike.png" alt="Dislikes"/>40</a>
           </section>
 
         </section>

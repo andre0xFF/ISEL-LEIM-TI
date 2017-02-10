@@ -6,10 +6,10 @@
   <!ENTITY youtube_thumbnail_mq "/hqdefault.jpg">
   <!ENTITY youtube_thumbnail_sd "/sddefault.jpg">
   <!ENTITY youtube_thumbnail_max "/maxresdefault.jpg">
-  <!ENTITY placeholder_150x150 "http://placehold.it/150x150">
+  <!ENTITY placeholder_150x150 "../../images/user.png">
 ]>
 
-<XMLTube xmlns:xmltube="urn:xmltube:ns">
+<XMLTube>
   <users>
     <user username="lsvinicius" password="152g!3RD:A" photo="&placeholder_150x150;">
       <name>Lucas Simão Vinícius</name>
@@ -238,8 +238,8 @@
     <subscriber playlist_id="p_1" username="adduda"/>
     <subscriber playlist_id="p_1" username="peanacleto"/>
     <subscriber playlist_id="p_1" username="lsvinicius"/>
-    <subscriber channel="u_0" username="lsvinicius"/>
-    <subscriber channel="u_1" username="lsvinicius"/>
+    <subscriber channel="ehezequiel" username="lsvinicius"/>
+    <subscriber channel="adduda" username="lsvinicius"/>
   </subscribers>
 
   <playlists_requests>

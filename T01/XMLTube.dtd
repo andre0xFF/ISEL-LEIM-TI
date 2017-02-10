@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!ELEMENT XMLTube (users, videos, playlists, playlists_videos, playlists_administrators, playlists_editors, subscribers, playlists_requests, playlists_views, comments, likes_dislikes)>
+
+
 <!ELEMENT users (user*)>
 <!ELEMENT user (name, birthday?)>
 <!ELEMENT name (#PCDATA)>
@@ -19,7 +22,7 @@
 <!ELEMENT tags (tag*)>
 <!ELEMENT tag (#PCDATA)>
 <!ELEMENT quality (quality_type+)>
-<!-- <!ELEMENT quality_types EMPTY> -->
+<!ELEMENT quality_type EMPTY>
 
 <!ATTLIST video
         id ID #REQUIRED
@@ -68,7 +71,7 @@
         username IDREF #REQUIRED
 	>
 
-<!ELEMENT playlists_subscribers (subscriber*)>
+<!ELEMENT subscribers (subscriber*)>
 <!ELEMENT subscriber EMPTY>
 
 <!ATTLIST subscriber
