@@ -4,11 +4,9 @@
     exclude-result-prefixes="xs"
     version="2.0">
     <xsl:import href="video_medium.xsl"/>
-    <xsl:import href="video_minimized.xsl"/>
     <xsl:import href="playlist_medium.xsl"/>
-    <xsl:import href="playlist_minimized.xsl"/>
     <xsl:import href="user_medium.xsl"/>
-    <xsl:import href="user_minimized.xsl"/>
+    <xsl:import href="comment_medium.xsl"/>
     
     <xsl:template name="section_article_container">
         <xsl:param name="id"/>
@@ -24,10 +22,14 @@
 
                         <xsl:choose>
                             <xsl:when test="$template = 'video_medium'">
-                                <xsl:call-template name="video_medium"/>                          
+                                <xsl:call-template name="video_medium">
+                                    <xsl:with-param name="video_id" select="@id"/>
+                                </xsl:call-template>                          
                             </xsl:when>
                             <xsl:when test="$template = 'video_minimized'">
-                                <xsl:call-template name="video_minimized"/>
+                                <xsl:call-template name="video_minimized">
+                                    <xsl:with-param name="video_id" select="@id"/>
+                                </xsl:call-template>
                             </xsl:when>
                             <xsl:when test="$template = 'playlist_medium'">
                                 <xsl:call-template name="playlist_medium"/>
@@ -43,6 +45,16 @@
                             <xsl:when test="$template = 'user_minimized'">
                                 <xsl:call-template name="user_minimized"/> 
                             </xsl:when>
+                            <xsl:when test="$template = 'comment_medium'">
+                                <xsl:call-template name="comment_medium">
+                                    <xsl:with-param name="comment_id" select="@id"/>
+                                </xsl:call-template>
+                            </xsl:when>
+                            <xsl:when test="$template = 'comment_minimized'">
+                                <xsl:call-template name="comment_minimized">
+                                    <xsl:with-param name="comment_id" select="@id"/>
+                                </xsl:call-template>
+                            </xsl:when>
                         </xsl:choose>
 
                     </xsl:if>
@@ -54,10 +66,14 @@
 
                         <xsl:choose>
                             <xsl:when test="$template = 'video_medium'">
-                                <xsl:call-template name="video_medium"/>                                
+                                <xsl:call-template name="video_medium">
+                                    <xsl:with-param name="video_id" select="@id"/>
+                                </xsl:call-template>                                
                             </xsl:when>
                             <xsl:when test="$template = 'video_minimized'">
-                                <xsl:call-template name="video_minimized"/> 
+                                <xsl:call-template name="video_minimized">
+                                    <xsl:with-param name="video_id" select="@id"/>
+                                </xsl:call-template> 
                             </xsl:when>
                             <xsl:when test="$template = 'playlist_medium'">
                                 <xsl:call-template name="playlist_medium"/> 

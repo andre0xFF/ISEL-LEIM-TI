@@ -3,5 +3,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="xs"
     version="2.0">
+    <xsl:import href="playlist_medium.xsl"/>
+    <xsl:import href="section_article_container.xsl"/>
     
 </xsl:stylesheet>

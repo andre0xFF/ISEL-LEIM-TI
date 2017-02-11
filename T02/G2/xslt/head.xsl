@@ -9,7 +9,7 @@
             <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"/>
             <link rel="stylesheet" href="../../css/structure.css"/>
             <link rel="stylesheet" href="../../css/style.css"/>
-            <title>XMLTube - User visualization</title> 
+            <title>XMLTube</title> 
         </head>
     </xsl:template>
 </xsl:stylesheet>

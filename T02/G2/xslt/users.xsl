@@ -5,15 +5,14 @@
     version="2.0">
     <xsl:import href="head.xsl"/>
     <xsl:import href="header.xsl"/>
-    <xsl:import href="user_minimized.xsl"/>
-    <xsl:import href="user_medium.xsl"/>
     <xsl:import href="user_detailed.xsl"/>
     
-    <xsl:template match="/">
-        <xsl:apply-templates/>
+    <xsl:template name="users" match="/">
+        <xsl:call-template name="users_list"/>
+        <xsl:call-template name="users_generator"/>
     </xsl:template>
     
-    <xsl:template match="/" name="users_list">
+    <xsl:template name="users_list">
         <xsl:result-document method="html" href="../lists/users/users.html">
             <html>
                 <xsl:call-template name="head"/>
@@ -32,7 +31,8 @@
         </xsl:result-document>
     </xsl:template>
     
-    <xsl:template match="/" name="users">
+    <!-- GENERATE ALL USERS -->
+    <xsl:template name="users_generator">
         <xsl:for-each select="//user">
             
             <!-- MINIMIZED -->

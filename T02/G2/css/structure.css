@@ -32,9 +32,10 @@ body {
   height: 15px;
 }
 
-.minimized #thumbnail {
+.minimized .thumbnail {
   width: 20%;
   height: 10%;
+  min-width: 150px;
 }
 
 .minimized {

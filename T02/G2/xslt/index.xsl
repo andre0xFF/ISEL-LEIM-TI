@@ -13,7 +13,7 @@
                     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"/>
                     <link rel="stylesheet" href="./css/structure.css"/>
                     <link rel="stylesheet" href="./css/style.css"/>
-                    <title>XMLTube - User visualization</title> 
+                    <title>XMLTube</title> 
                 </head>
                 
                 <body>
@@ -27,7 +27,7 @@
                     
                     <footer>
                         <p>Instituto Superior de Engenharia de Lisboa</p>
-                        <p>Andre' Fonseca 39758</p><br/>
+                        <p><a href="https://github.com/andrewfonseca" target="_blank">Andre' Fonseca 39758</a></p><br/>
                         <p>February, 2017</p>
                     </footer>
                 </body>
