@@ -27,9 +27,14 @@ body {
   text-align: center;
 }
 
-.minimized img {
+.minimized .icon {
   width: 15px;
   height: 15px;
+}
+
+.minimized #thumbnail {
+  width: 20%;
+  height: 10%;
 }
 
 .minimized {
