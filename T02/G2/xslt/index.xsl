@@ -23,6 +23,10 @@
                         <h2><a href="./lists/videos/videos.html">VIDEOS</a></h2>
                         <h2><a href="./lists/playlists/playlists.html">PLAYLISTS</a></h2>
                         <h2><a href="./lists/users/users.html">USERS</a></h2>
+                        <br/>
+                        <h4><a href="./lists/users/users_5_videos.html">Users with more than 5 published videos</a></h4>
+                        <h4><a href="./lists/videos/videos_6_likes.html">Videos with more than 6 likes</a></h4>
+                        <h4><a href="./lists/videos/videos_10_comments.html">Videos with more than 10 comments</a></h4>
                     </nav>
                     
                     <footer>

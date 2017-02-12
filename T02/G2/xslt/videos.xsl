@@ -10,6 +10,8 @@
     <xsl:template name="videos" match="/">
         <xsl:call-template name="videos_list"/>
         <xsl:call-template name="videos_generator"/>
+        <xsl:call-template name="videos_list_6_likes"/>
+        <xsl:call-template name="videos_list_10_comments"/>
     </xsl:template>
     
     <xsl:template name="videos_list">
@@ -25,6 +27,56 @@
                         <xsl:with-param name="xpath" select="//video"/>
                         <xsl:with-param name="template" select="'video_medium'"/>
                     </xsl:call-template>
+                </body>
+                
+            </html>
+        </xsl:result-document>
+    </xsl:template>
+    
+    <xsl:template name="videos_list_6_likes">
+        <xsl:result-document method="html" href="../lists/videos/videos_6_likes.html">
+            <html>
+                <xsl:call-template name="head"/>
+                
+                <body>
+                    <xsl:call-template name="header"/>
+                    
+                    <xsl:for-each select="//video">
+                        <xsl:variable name="v" select="."/>
+                        <xsl:if test="count(//like[@video_id=$v/@id]) &gt; 6">
+                            <xsl:call-template name="section_article_container">
+                                <xsl:with-param name="id" select="'videos'"/>
+                                <xsl:with-param name="description" select="'Videos'"/>
+                                <xsl:with-param name="xpath" select="$v"/>
+                                <xsl:with-param name="template" select="'video_medium'"/>
+                            </xsl:call-template>
+                        </xsl:if>
+                    </xsl:for-each>
+                </body>
+                
+            </html>
+        </xsl:result-document>
+    </xsl:template>
+    
+    <xsl:template name="videos_list_10_comments">
+        <xsl:result-document method="html" href="../lists/videos/videos_10_comments.html">
+            <html>
+                <xsl:call-template name="head"/>
+                
+                <body>
+                    <xsl:call-template name="header"/>
+                    
+                    <xsl:for-each select="//video">
+                        <xsl:variable name="v" select="."/>
+                        <xsl:if test="count(//comment[@reference=$v/@id]) &gt; 10">
+                            <xsl:call-template name="section_article_container">
+                                <xsl:with-param name="id" select="'videos'"/>
+                                <xsl:with-param name="description" select="'Videos'"/>
+                                <xsl:with-param name="xpath" select="$v"/>
+                                <xsl:with-param name="template" select="'video_medium'"/>
+                            </xsl:call-template>
+                        </xsl:if>
+                    </xsl:for-each>
                 </body>
                 
             </html>

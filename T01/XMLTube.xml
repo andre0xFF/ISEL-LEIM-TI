@@ -228,12 +228,12 @@
   </videos>
 
   <playlists>
-    <playlist id="p_0" order="random" username="lsvinicius" thumbnail="&placeholder_150x150;">
+    <playlist id="p_0" order="random" username="lsvinicius" thumbnail="../../images/playlist.png">
       <title>SpaceX Featured Videos</title>
       <description>Collection of my favorite SpaceX videos</description>
       <creation_date>2015/10/10</creation_date>
     </playlist>
-    <playlist id="p_1" order="sorted" username="ehezequiel" thumbnail="&placeholder_150x150;">
+    <playlist id="p_1" order="sorted" username="ehezequiel" thumbnail="../../images/playlist.png">
       <title>National Geographic Featured Videos</title>
       <description>Collection of my favorite National Geographic videos</description>
       <creation_date>2015/10/11</creation_date>
@@ -341,6 +341,46 @@
       <time>11:40:00</time>
       <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
     </comment>
+    <comment id="c_8" reference="v_0" username="gocunha">
+      <date>2016/10/16</date>
+      <time>11:40:00</time>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_9" reference="v_0" username="mocunha">
+      <date>2016/10/16</date>
+      <time>11:40:00</time>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_10" reference="v_0" username="crraposo">
+      <date>2016/10/16</date>
+      <time>11:40:00</time>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_11" reference="v_0" username="joraposo">
+      <date>2016/10/16</date>
+      <time>11:40:00</time>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_12" reference="v_0" username="gocunha">
+      <date>2016/10/16</date>
+      <time>11:40:00</time>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_13" reference="v_0" username="mocunha">
+      <date>2016/10/16</date>
+      <time>11:40:00</time>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_14" reference="v_0" username="crraposo">
+      <date>2016/10/16</date>
+      <time>11:40:00</time>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_15" reference="v_0" username="joraposo">
+      <date>2016/10/16</date>
+      <time>11:40:00</time>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
   </comments>
 
   <likes_dislikes>
@@ -358,6 +398,10 @@
     <like video_id="v_0" username="evfernando" />
     <like video_id="v_0" username="lsvinicius" />
     <like video_id="v_0" username="ehezequiel" />
+    <like video_id="v_0" username="gocunha" />
+    <like video_id="v_0" username="mocunha" />
+    <like video_id="v_0" username="crraposo" />
+    <like video_id="v_0" username="joraposo" />
   </likes_dislikes>
 
 </XMLTube>

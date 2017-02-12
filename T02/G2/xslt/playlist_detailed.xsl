@@ -5,6 +5,7 @@
     version="2.0">
     <xsl:import href="section_article_container.xsl"/>
     <xsl:template name="playlist_detailed">
+        <xsl:param name="playlist_id"/>
         
     </xsl:template>
 </xsl:stylesheet>

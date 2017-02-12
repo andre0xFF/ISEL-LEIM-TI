@@ -32,10 +32,14 @@
                                 </xsl:call-template>
                             </xsl:when>
                             <xsl:when test="$template = 'playlist_medium'">
-                                <xsl:call-template name="playlist_medium"/>
+                                <xsl:call-template name="playlist_medium">
+                                    <xsl:with-param name="playlist_id" select="@id"/>
+                                </xsl:call-template>
                             </xsl:when>
                             <xsl:when test="$template = 'playlist_minimzed'">
-                                <xsl:call-template name="playlist_minimized"/>
+                                <xsl:call-template name="playlist_minimized">
+                                    <xsl:with-param name="playlist_id" select="@id"/>
+                                </xsl:call-template>
                             </xsl:when>
                             <xsl:when test="$template = 'user_medium'">
                                 <xsl:call-template name="user_medium">
@@ -76,10 +80,14 @@
                                 </xsl:call-template> 
                             </xsl:when>
                             <xsl:when test="$template = 'playlist_medium'">
-                                <xsl:call-template name="playlist_medium"/> 
+                                <xsl:call-template name="playlist_medium">
+                                    <xsl:with-param name="playlist_id" select="@id"/>
+                                </xsl:call-template>
                             </xsl:when>
                             <xsl:when test="$template = 'playlist_minimzed'">
-                                <xsl:call-template name="playlist_minimized"/> 
+                                <xsl:call-template name="playlist_minimized">
+                                    <xsl:with-param name="playlist_id" select="@id"/>
+                                </xsl:call-template> 
                             </xsl:when>
                             <xsl:when test="$template = 'user_medium'">
                                 <xsl:call-template name="user_medium">
