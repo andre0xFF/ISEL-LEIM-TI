@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE XMLTubeUserInfo SYSTEM "userInfo.dtd"><XMLTubeUserInfo>
+   <user username="lsvinicius" birthdate="1977/10/10" numberOfComments="1">
+      <name>Lucas Simão Vinícius</name>
+   </user>
+   <user username="evfernando" birthdate="1975/10/03" numberOfComments="1">
+      <name>Eneida Viriato Fernando</name>
+   </user>
+   <user username="ccharoldo" birthdate="1999/10/03" numberOfComments="3">
+      <name>Carlinhos Custódio Haroldo</name>
+   </user>
+   <user username="ehezequiel" birthdate="" numberOfComments="1">
+      <name>Elder Helder Ezequiel</name>
+      <publishedVideo id="v_6">
+         <title>One Year Ago Today | Dragon's First Trip to Station</title>
+         <videoLink>https://youtu.be/LwbUilUa4K4</videoLink>
+      </publishedVideo>
+   </user>
+   <user username="adduda" birthdate="1992/10/11" numberOfComments="2">
+      <name>Artur Duarte Duda</name>
+      <publishedVideo id="v_0">
+         <title>2014 | SpaceX Year in Review</title>
+         <videoLink>https://youtu.be/0a_00nJ_Y88</videoLink>
+      </publishedVideo>
+      <publishedVideo id="v_1">
+         <title>F9R First Flight Test | 250m</title>
+         <videoLink>https://youtu.be/0UjWqQPWmsY</videoLink>
+      </publishedVideo>
+      <publishedVideo id="v_2">
+         <title>Mission Overview | SES-8 Launch</title>
+         <videoLink>https://youtu.be/24i8G5a5d5Q</videoLink>
+      </publishedVideo>
+      <publishedVideo id="v_3">
+         <title>Grasshopper 744m Test | Single Camera (Hexacopter)</title>
+         <videoLink>https://youtu.be/9ZDkItO-0a4</videoLink>
+      </publishedVideo>
+      <publishedVideo id="v_4">
+         <title>Grasshopper Divert | Single Cam</title>
+         <videoLink>https://youtu.be/2t15vP1PyoA</videoLink>
+      </publishedVideo>
+      <publishedVideo id="v_5">
+         <title>Falcon 9-Reusable (F9-R) 1st Stage Firing</title>
+         <videoLink>https://youtu.be/CgIghRD4-ao</videoLink>
+      </publishedVideo>
+   </user>
+   <user username="peanacleto" birthdate="1980/10/12" numberOfComments="0">
+      <name>Palmira Eutímio Anacleto</name>
+      <publishedVideo id="v_7">
+         <title>This is SpaceX</title>
+         <videoLink>https://youtu.be/ujX6CuRELFE</videoLink>
+      </publishedVideo>
+      <publishedVideo id="v_8">
+         <title>Before the Flood - Full Movie | National Geographic</title>
+         <videoLink>https://youtu.be/90CkXVF-Q8M</videoLink>
+      </publishedVideo>
+      <publishedVideo id="v_9">
+         <title>Before MARS | MARS</title>
+         <videoLink>https://youtu.be/mPuTlZYDbh4</videoLink>
+      </publishedVideo>
+   </user>
+   <user username="paribeiro" birthdate="1985/10/12" numberOfComments="0">
+      <name>Pedro Alves Ribeiro</name>
+   </user>
+   <user username="saribeiro" birthdate="1985/10/12" numberOfComments="0">
+      <name>Susana Alves Ribeiro</name>
+   </user>
+   <user username="gocunha" birthdate="1987/11/02" numberOfComments="2">
+      <name>Goncalo Oliveira Cunha</name>
+   </user>
+   <user username="mocunha" birthdate="1989/04/22" numberOfComments="2">
+      <name>Maria Oliveira Cunha</name>
+   </user>
+   <user username="crraposo" birthdate="1950/01/01" numberOfComments="2">
+      <name>Cristina Raposo</name>
+   </user>
+   <user username="joraposo" birthdate="1951/07/07" numberOfComments="2">
+      <name>Joaquim Raposo</name>
+   </user>
+   <user username="taalmeida" birthdate="1986/09/12" numberOfComments="0">
+      <name>Tiago Almeida</name>
+   </user>
+   <user username="fjjafui" birthdate="1989/10/10" numberOfComments="0">
+      <name>Francisco Jacinto Jafui</name>
+   </user>
+   <user username="sacantanhoso" birthdate="1986/10/12" numberOfComments="0">
+      <name>Samuel Cantanhoso</name>
+   </user>
+</XMLTubeUserInfo>

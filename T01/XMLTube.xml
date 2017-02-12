@@ -1,30 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE XMLTube SYSTEM "XMLTube.dtd">
+<!DOCTYPE XMLTube SYSTEM "XMLTube.dtd" [
+  <!ENTITY youtube_video "https://youtu.be/">
+  <!ENTITY youtube_thumbnail "http://img.youtube.com/vi/">
+  <!ENTITY youtube_thumbnail_hq "/hqdefault.jpg">
+  <!ENTITY youtube_thumbnail_mq "/hqdefault.jpg">
+  <!ENTITY youtube_thumbnail_sd "/sddefault.jpg">
+  <!ENTITY youtube_thumbnail_max "/maxresdefault.jpg">
+  <!ENTITY placeholder_150x150 "../../images/user.png">
+]>
 
-<XMLTube xmlns="urn:xmltube:ns">
+<XMLTube>
   <users>
     <user username="lsvinicius" password="152g!3RD:A" photo="&placeholder_150x150;">
       <name>Lucas Simão Vinícius</name>
-      <birthday>10/10/1977</birthday>
+      <birthday>1977/10/10</birthday>
     </user>
     <user username="evfernando" password="!3RD:A152g">
       <name>Eneida Viriato Fernando</name>
-      <birthday>10/03/1975</birthday>
+      <birthday>1975/10/03</birthday>
     </user>
     <user username="ccharoldo" password="3RD:152g!A" photo="&placeholder_150x150;">
       <name>Carlinhos Custódio Haroldo</name>
-      <birthday>10/03/1999</birthday>
+      <birthday>1999/10/03</birthday>
     </user>
     <user username="ehezequiel" password="!3R152gD:A" photo="&placeholder_150x150;">
       <name>Elder Helder Ezequiel</name>
     </user>
     <user username="adduda" password="g!3R152D:A" photo="&placeholder_150x150;">
       <name>Artur Duarte Duda</name>
-      <birthday>10/11/1992</birthday>
+      <birthday>1992/10/11</birthday>
     </user>
     <user username="peanacleto" password="RD152g!3:A" photo="&placeholder_150x150;">
       <name>Palmira Eutímio Anacleto</name>
-      <birthday>10/12/1980</birthday>
+      <birthday>1980/10/12</birthday>
+    </user>
+
+    <user username="paribeiro" password="RD152g!3:A" photo="&placeholder_150x150;">
+      <name>Pedro Alves Ribeiro</name>
+      <birthday>1985/10/12</birthday>
+    </user>
+    <user username="saribeiro" password="RD152g!3:A" photo="&placeholder_150x150;">
+      <name>Susana Alves Ribeiro</name>
+      <birthday>1985/10/12</birthday>
+    </user>
+    <user username="gocunha" password="RD152g!3:A" photo="&placeholder_150x150;">
+      <name>Goncalo Oliveira Cunha</name>
+      <birthday>1987/11/02</birthday>
+    </user>
+    <user username="mocunha" password="RD152g!3:A" photo="&placeholder_150x150;">
+      <name>Maria Oliveira Cunha</name>
+      <birthday>1989/04/22</birthday>
+    </user>
+    <user username="crraposo" password="RD152g!3:A" photo="&placeholder_150x150;">
+      <name>Cristina Raposo</name>
+      <birthday>1950/01/01</birthday>
+    </user>
+    <user username="joraposo" password="RD152g!3:A" photo="&placeholder_150x150;">
+      <name>Joaquim Raposo</name>
+      <birthday>1951/07/07</birthday>
+    </user>
+    <user username="taalmeida" password="RD152g!3:A" photo="&placeholder_150x150;">
+      <name>Tiago Almeida</name>
+      <birthday>1986/09/12</birthday>
+    </user>
+    <user username="fjjafui" password="RD152g!3:A" photo="&placeholder_150x150;">
+      <name>Francisco Jacinto Jafui</name>
+      <birthday>1989/10/10</birthday>
+    </user>
+    <user username="sacantanhoso" password="RD152g!3:A" photo="&placeholder_150x150;">
+      <name>Samuel Cantanhoso</name>
+      <birthday>1986/10/12</birthday>
     </user>
   </users>
 
@@ -183,12 +228,12 @@
   </videos>
 
   <playlists>
-    <playlist id="p_0" order="random" username="lsvinicius" thumbnail="&placeholder_150x150;">
+    <playlist id="p_0" order="random" username="lsvinicius" thumbnail="../../images/playlist.png">
       <title>SpaceX Featured Videos</title>
       <description>Collection of my favorite SpaceX videos</description>
       <creation_date>2015/10/10</creation_date>
     </playlist>
-    <playlist id="p_1" order="sorted" username="ehezequiel" thumbnail="&placeholder_150x150;">
+    <playlist id="p_1" order="sorted" username="ehezequiel" thumbnail="../../images/playlist.png">
       <title>National Geographic Featured Videos</title>
       <description>Collection of my favorite National Geographic videos</description>
       <creation_date>2015/10/11</creation_date>
@@ -205,9 +250,6 @@
     <playlist_video playlist_id="p_0" video_id="v_6"/>
     <playlist_video playlist_id="p_0" video_id="v_7"/>
     <playlist_video playlist_id="p_1" video_id="v_8"/>
-    <playlist_video playlist_id="p_1" video_id="v_9"/>
-    <playlist_video playlist_id="p_1" video_id="v_9"/>
-    <playlist_video playlist_id="p_1" video_id="v_9"/>
     <playlist_video playlist_id="p_1" video_id="v_9"/>
   </playlists_videos>
 
@@ -233,8 +275,8 @@
     <subscriber playlist_id="p_1" username="adduda"/>
     <subscriber playlist_id="p_1" username="peanacleto"/>
     <subscriber playlist_id="p_1" username="lsvinicius"/>
-    <subscriber channel="u_0" username="lsvinicius"/>
-    <subscriber channel="u_1" username="lsvinicius"/>
+    <subscriber channel="ehezequiel" username="lsvinicius"/>
+    <subscriber channel="adduda" username="lsvinicius"/>
   </subscribers>
 
   <playlists_requests>
@@ -299,6 +341,46 @@
       <time>11:40:00</time>
       <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
     </comment>
+    <comment id="c_8" reference="v_0" username="gocunha">
+      <date>2016/10/16</date>
+      <time>11:40:00</time>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_9" reference="v_0" username="mocunha">
+      <date>2016/10/16</date>
+      <time>11:40:00</time>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_10" reference="v_0" username="crraposo">
+      <date>2016/10/16</date>
+      <time>11:40:00</time>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_11" reference="v_0" username="joraposo">
+      <date>2016/10/16</date>
+      <time>11:40:00</time>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_12" reference="v_0" username="gocunha">
+      <date>2016/10/16</date>
+      <time>11:40:00</time>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_13" reference="v_0" username="mocunha">
+      <date>2016/10/16</date>
+      <time>11:40:00</time>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_14" reference="v_0" username="crraposo">
+      <date>2016/10/16</date>
+      <time>11:40:00</time>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
+    <comment id="c_15" reference="v_0" username="joraposo">
+      <date>2016/10/16</date>
+      <time>11:40:00</time>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+    </comment>
   </comments>
 
   <likes_dislikes>
@@ -316,6 +398,10 @@
     <like video_id="v_0" username="evfernando" />
     <like video_id="v_0" username="lsvinicius" />
     <like video_id="v_0" username="ehezequiel" />
+    <like video_id="v_0" username="gocunha" />
+    <like video_id="v_0" username="mocunha" />
+    <like video_id="v_0" username="crraposo" />
+    <like video_id="v_0" username="joraposo" />
   </likes_dislikes>
 
 </XMLTube>
